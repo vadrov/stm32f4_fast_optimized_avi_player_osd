@@ -8,6 +8,7 @@ Copyright (C)2019-2023, VadRov, all right reserved.
 - аудио-ЦАП PCM5102;
 - инкрементарный механический энкодер;
 - конденсатор керамический 0.01-0.1 мкФ - 2 шт.
+[![Watch the video](https://img.youtube.com/vi/sC5nm7vdN6k/maxresdefault.jpg)](https://youtu.be/sC5nm7vdN6k)
 ## Требования к формату AVI:
 - поток видео mjpeg (motion jpeg), т.е. видеокадры должны быть закодированы jpeg кодеком;
 - поток аудио mp3, т.е. звук должен быть закодирован mp3 кодеком.\
