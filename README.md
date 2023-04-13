@@ -25,8 +25,7 @@ d = 1000000 * samples / samplerate,\
 - пропустить декодирование видеокадра (переход на следующий видеокадр с инкрементом счетчика воспроизведения для видео), если время, рассчитываемое по видеокадрам, отстает от времени, рассчитанного по воспроизведенным аудиокадрам;
 - организовать задержку, равную разнице времени (после чего перейти к декодированию кадра), если время, расчитанное по видеокадрам, превышает время, рассчитанное по аудиокадрам.\
 Демонстрируемый проект использует следующие драйвера, модули, библиотеки ...:
-## Для декодирования jpeg изображений используется модифицированная и оптимизированная для stm32
-библиотека TJpgDec - Tiny JPEG Decompressor R0.03 (папка JPEG)\
+## Для декодирования jpeg изображений используется модифицированная и оптимизированная для stm32 библиотека TJpgDec - Tiny JPEG Decompressor R0.03 (папка JPEG)
 Portions copyright (C) 2021, ChaN,   all right reserved.\
 Portions сopyright (C) 2022-2023, VadRov, all right reserved.
 ## Для работы с SD картой используется драйвер SD карты (папка FATFS)
@@ -53,6 +52,6 @@ Copyright (C) 2019, VadRov, all right reserved.
 ## Процедуры работы со строками (папка MyString)
 Copyright (C) 2019, VadRov, all right reserved.
 
-Автор: **VadRov**\
+Автор проекта: **VadRov**\
 Контакты: [Youtube](https://www.youtube.com/@VadRov) [Дзен](https://dzen.ru/vadrov) [VK](https://vk.com/vadrov) [Telegram](https://t.me/vadrov_channel)\
 Поддержать автора: [donate.qiwi](https://donate.qiwi.com/payin/VadRov)  [donate.yoomoney](https://yoomoney.ru/to/4100117522443917)
