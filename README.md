@@ -1,11 +1,11 @@
 Copyright (C)2019-2023, VadRov, all right reserved.
 # Видеоплеер для проигрывания AVI-файлов (файл с расширением avi, контейнер riff)
 Допускается свободное распространение. При любом способе распространения указание автора ОБЯЗАТЕЛЬНО. В случае внесения изменений и распространения модификаций указание первоначального автора ОБЯЗАТЕЛЬНО. Распространяется по типу "как есть", то есть использование осуществляется на свой страх и риск. Автор не предоставляет никаких гарантий.
-##Требования к формату AVI:
+## Требования к формату AVI:
 - поток видео mjpeg (motion jpeg), т.е. видеокадры должны быть закодированы jpeg кодеком;
 - поток аудио mp3, т.е. звук должен быть закодирован mp3 кодеком.\
 Для преобразования видеофайла к поддерживаемому плеером формату рекомендуется использовать библиотеку ffmpeg. Например, следующая командная строка преобразует mp4-видео в поддерживаемый плеером формат avi с размером кадра 320х240, частотой 25 кадров в секунду, с качеством кодирования 15:
-##ffmpeg -i video.mp4 -c:a mp3 -c:v mjpeg -s 320x240 -r 25 -q 15 video.avi
+## ffmpeg -i video.mp4 -c:a mp3 -c:v mjpeg -s 320x240 -r 25 -q 15 video.avi
 где:
 - -i video.mp4 - указание на файл-источник, который вы хотите преобразовать в поддерживаемый плееером формат avi;
 - video.avi - выходной файл с расширением avi, в котором будет сохранен результат преобразования;
@@ -24,37 +24,35 @@ d = 1000000 * samples / samplerate,\
 - декодировать видеокадр, если разница времени не превышает длительности отображения одного видеокадра;
 - пропустить декодирование видеокадра (переход на следующий видеокадр с инкрементом счетчика воспроизведения для видео), если время, рассчитываемое по видеокадрам, отстает от времени, рассчитанного по воспроизведенным аудиокадрам;
 - организовать задержку, равную разнице времени (после чего перейти к декодированию кадра), если время, расчитанное по видеокадрам, превышает время, рассчитанное по аудиокадрам.\
-Демонстрируемый проект использует следующие драйвера, модули, библиотеки ...:\
-##Для декодирования jpeg изображений используется модифицированная и оптимизированная для stm32
+Демонстрируемый проект использует следующие драйвера, модули, библиотеки ...:
+## Для декодирования jpeg изображений используется модифицированная и оптимизированная для stm32
 библиотека TJpgDec - Tiny JPEG Decompressor R0.03 (папка JPEG)\
 Portions copyright (C) 2021, ChaN,   all right reserved.\
-Portions сopyright (C) 2022-2023, VadRov, all right reserved.\
-##Для работы с SD картой используется драйвер SD карты (папка FATFS)
+Portions сopyright (C) 2022-2023, VadRov, all right reserved.
+## Для работы с SD картой используется драйвер SD карты (папка FATFS)
 Portions copyright (C) 2014, ChaN, all rights reserved.\
 Portions copyright (C) 2017, kiwih, all rights reserved.\
 Portions сopyright (C) 2019, VadRov, all right reserved.
-##Для работы с файловой системой используется библиотека FatFs
+## Для работы с файловой системой используется библиотека FatFs
 Generic FAT Filesystem Module  R0.15 w/patch1 (папка FATFS)\
-Copyright (C) 2022, ChaN, all right reserved.\
-##Драйвер DAC на базе PCM5102 (папка PCM5102)
-Copyright (C) 2019, VadRov, all right reserved.\
-##Драйвер дисплея V1.4 с вариантом "ASM-турбо" (папка Display)
-\Copyright (C) 2019-2023 VadRov, all right reserved.
-##Fixed-point MP3 decoder (папка MP3Helix)
-Portions Copyright (c) 1995-2002 RealNetworks, Inc. All Rights Reserved.\
-##Файловый менеджер (папка FileManager)
-Copyright (C) 2022, VadRov, all right reserved.
-##Модуль для работы с кнопоками (папка Keyboard)
-Copyright (C) 2021, VadRov, all right reserved.
-##Графическая библиотека для работы с объектами-примитивами в двумерном пространстве microGL2D (папка MicroGL2D)
-Copyright (C) 2022, VadRov, all right reserved.
-##Драйвер энкодера для STM32F4 (папка Encoder)
+Copyright (C) 2022, ChaN, all right reserved.
+## Драйвер DAC на базе PCM5102 (папка PCM5102)
 Copyright (C) 2019, VadRov, all right reserved.
-##Процедуры работы со строками (папка MyString)
+## Драйвер дисплея V1.4 с вариантом "ASM-турбо" (папка Display)
+Copyright (C) 2019-2023 VadRov, all right reserved.
+## Fixed-point MP3 decoder (папка MP3Helix)
+Portions Copyright (c) 1995-2002 RealNetworks, Inc. All Rights Reserved.
+## Файловый менеджер (папка FileManager)
+Copyright (C) 2022, VadRov, all right reserved.
+## Модуль для работы с кнопоками (папка Keyboard)
+Copyright (C) 2021, VadRov, all right reserved.
+## Графическая библиотека для работы с объектами-примитивами в двумерном пространстве microGL2D (папка MicroGL2D)
+Copyright (C) 2022, VadRov, all right reserved.
+## Драйвер энкодера для STM32F4 (папка Encoder)
+Copyright (C) 2019, VadRov, all right reserved.
+## Процедуры работы со строками (папка MyString)
 Copyright (C) 2019, VadRov, all right reserved.
 
-##Контакты автора:
-https://www.youtube.com/@VadRov\
-https://dzen.ru/vadrov\
-https://vk.com/vadrov\
-https://t.me/vadrov_channel
+Автор: **VadRov**\
+Контакты: [Youtube](https://www.youtube.com/@VadRov) [Дзен](https://dzen.ru/vadrov) [VK](https://vk.com/vadrov) [Telegram](https://t.me/vadrov_channel)\
+Поддержать автора: [donate.qiwi](https://donate.qiwi.com/payin/VadRov)  [donate.yoomoney](https://yoomoney.ru/to/4100117522443917)
