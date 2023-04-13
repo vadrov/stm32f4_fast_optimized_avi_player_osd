@@ -40,7 +40,7 @@ Portions сopyright (C) 2022-2023, VadRov, all right reserved.
 Portions copyright (C) 2014, ChaN, all rights reserved.\
 Portions copyright (C) 2017, kiwih, all rights reserved.\
 Portions сopyright (C) 2019, VadRov, all right reserved.
-## Для работы с файловой системой используется библиотека FatFs Generic FAT Filesystem Module  R0.15 w/patch1 (папка FATFS)\
+## Для работы с файловой системой используется библиотека FatFs Generic FAT Filesystem Module  R0.15 w/patch1 (папка FATFS)
 Copyright (C) 2022, ChaN, all right reserved.
 ## Драйвер DAC на базе PCM5102 (папка PCM5102)
 Copyright (C) 2019, VadRov, all right reserved.
