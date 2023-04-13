@@ -1,0 +1,8 @@
+../AVI/player.c:27:9:PlayerNew	0	static
+../AVI/player.c:33:6:PlayerDelete	8	static
+../AVI/player.c:46:18:PlayerInit	4	static
+../AVI/player.c:61:24:PlayerReadHeader	0	static
+../AVI/player.c:69:23:PlayerStartPlay	8	static
+../AVI/player.c:91:20:PlayerUpdate	8	static
+../AVI/player.c:103:18:PlayerStop	0	static
+../AVI/player.c:110:6:FreeAudioMeta	8	static

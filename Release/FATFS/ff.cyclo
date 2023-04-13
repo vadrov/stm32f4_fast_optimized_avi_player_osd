@@ -1,0 +1,15 @@
+ff.c:2726:13:get_fileinfo	32
+ff.c:3400:13:check_fs	21
+ff.c:3494:16:mount_volume.constprop	39
+ff.c:1262:14:get_fat.isra	15
+ff.c:1802:16:dir_sdi.constprop	24
+ff.c:3160:16:follow_path	94
+ff.c:3766:9:f_mount	9
+ff.c:3826:9:f_open	7
+ff.c:4027:9:f_read	22
+ff.c:4329:9:f_close	6
+ff.c:4546:9:f_lseek	36
+ff.c:4710:9:f_opendir	10
+ff.c:4776:9:f_closedir	6
+ff.c:4806:9:f_readdir	82
+ff.c:4894:9:f_stat	5

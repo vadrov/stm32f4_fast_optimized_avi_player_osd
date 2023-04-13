@@ -1,0 +1,8 @@
+player.c:27:9:PlayerNew	1
+player.c:33:6:PlayerDelete	12
+player.c:46:18:PlayerInit	6
+player.c:61:24:PlayerReadHeader	1
+player.c:69:23:PlayerStartPlay	4
+player.c:91:20:PlayerUpdate	2
+player.c:103:18:PlayerStop	1
+player.c:110:6:FreeAudioMeta	9

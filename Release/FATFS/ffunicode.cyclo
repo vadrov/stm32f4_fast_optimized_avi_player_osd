@@ -1,0 +1,3 @@
+ffunicode.c:15222:7:ff_uni2oem	6
+ffunicode.c:15244:7:ff_oem2uni	4
+ffunicode.c:15464:7:ff_wtoupper	15

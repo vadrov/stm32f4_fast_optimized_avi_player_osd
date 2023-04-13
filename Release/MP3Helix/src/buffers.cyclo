@@ -1,0 +1,2 @@
+buffers.c:158:6:xmp3_FreeBuffers	9
+buffers.c:94:13:xmp3_AllocateBuffers	9

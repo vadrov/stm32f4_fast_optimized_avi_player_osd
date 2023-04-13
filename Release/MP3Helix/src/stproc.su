@@ -1,0 +1,3 @@
+../MP3Helix/src/stproc.c:64:6:xmp3_MidSideProc	28	static,ignoring_inline_asm
+../MP3Helix/src/stproc.c:106:6:xmp3_IntensityProcMPEG1	96	static,ignoring_inline_asm
+../MP3Helix/src/stproc.c:212:6:xmp3_IntensityProcMPEG2	168	static,ignoring_inline_asm

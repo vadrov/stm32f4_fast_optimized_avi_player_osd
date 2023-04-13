@@ -1,0 +1,4 @@
+../JPEG/jpeg_chan.c:83:19:tjd_output	40	static
+../JPEG/jpeg_chan.c:67:28:tjd_input_memory	16	static
+../JPEG/jpeg_chan.c:39:28:tjd_input_file	24	static,ignoring_inline_asm
+../JPEG/jpeg_chan.c:107:9:LCD_Load_JPG_chan	208	static

@@ -1,0 +1,2 @@
+../JPEG/tjpgd.c:1579:9:jd_prepare	112	static,ignoring_inline_asm
+../JPEG/tjpgd.c:1748:9:jd_decomp	144	static,ignoring_inline_asm

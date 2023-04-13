@@ -1,0 +1,5 @@
+../AVI/mp3_callback.c:112:12:mp3_process_decode	72	static
+../AVI/mp3_callback.c:27:24:mp3_read_header_callback	80	static
+../AVI/mp3_callback.c:81:23:mp3_start_play_callback	16	static
+../AVI/mp3_callback.c:93:20:mp3_update_play_callback	8	static
+../AVI/mp3_callback.c:102:18:mp3_stop_callback	8	static

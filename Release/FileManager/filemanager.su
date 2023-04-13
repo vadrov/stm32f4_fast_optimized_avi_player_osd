@@ -1,0 +1,14 @@
+../FileManager/filemanager.c:145:20:FileManagerSetDisplay	0	static
+../FileManager/filemanager.c:151:20:FileManagerSetWin	0	static
+../FileManager/filemanager.c:160:20:FileManagerSetColor	0	static
+../FileManager/filemanager.c:166:20:FileManagerSetFont	0	static
+../FileManager/filemanager.c:172:20:FileManagerSetKeys	0	static
+../FileManager/filemanager.c:181:20:FileManagerChangeActiveFlag	0	static
+../FileManager/filemanager.c:187:23:FileManagerGetStatus	0	static
+../FileManager/filemanager.c:193:21:FileManagerGetFilePath	0	static
+../FileManager/filemanager.c:199:21:FileManagerGetFileName	0	static
+../FileManager/filemanager.c:211:13:FileManagerShow	984	dynamic,ignoring_inline_asm
+../FileManager/filemanager.c:80:6:Dos866toCp1251	24	static
+../FileManager/filemanager.c:501:23:FileManagerNew	16	static
+../FileManager/filemanager.c:521:6:FileManagerDelete	8	static
+../FileManager/filemanager.c:534:6:FileManagerPopupWin	72	static

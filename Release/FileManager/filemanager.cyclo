@@ -1,0 +1,14 @@
+filemanager.c:145:20:FileManagerSetDisplay	1
+filemanager.c:151:20:FileManagerSetWin	1
+filemanager.c:160:20:FileManagerSetColor	1
+filemanager.c:166:20:FileManagerSetFont	1
+filemanager.c:172:20:FileManagerSetKeys	1
+filemanager.c:181:20:FileManagerChangeActiveFlag	1
+filemanager.c:187:23:FileManagerGetStatus	1
+filemanager.c:193:21:FileManagerGetFilePath	1
+filemanager.c:199:21:FileManagerGetFileName	1
+filemanager.c:211:13:FileManagerShow	89
+filemanager.c:80:6:Dos866toCp1251	7
+filemanager.c:501:23:FileManagerNew	1
+filemanager.c:521:6:FileManagerDelete	6
+filemanager.c:534:6:FileManagerPopupWin	5

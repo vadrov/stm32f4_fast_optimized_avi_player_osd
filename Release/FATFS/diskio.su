@@ -1,0 +1,4 @@
+../FATFS/diskio.c:25:9:disk_status	0	static
+../FATFS/diskio.c:38:9:disk_initialize	0	static
+../FATFS/diskio.c:51:9:disk_read	16	static
+../FATFS/diskio.c:91:9:disk_ioctl	0	static

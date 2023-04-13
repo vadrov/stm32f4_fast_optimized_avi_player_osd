@@ -1,0 +1,4 @@
+st7789.c:81:10:ST7789_Init	4
+st7789.c:92:10:ST7789_SetWindow	1
+st7789.c:101:10:ST7789_SleepIn	1
+st7789.c:106:10:ST7789_SleepOut	1

@@ -1,0 +1,6 @@
+mp3dec.c:60:13:MP3InitDecoder	1
+mp3dec.c:81:6:MP3FreeDecoder	2
+mp3dec.c:104:5:MP3FindSyncWord	5
+mp3dec.c:184:6:MP3GetLastFrameInfo	3
+mp3dec.c:221:5:MP3GetNextFrameInfo	4
+mp3dec.c:281:5:MP3Decode	33

@@ -1,0 +1,3 @@
+imdct.c:132:13:WinPrevious.part.0	1
+imdct.c:185:12:FreqInvertRescale	36
+imdct.c:717:5:xmp3_IMDCT	40

@@ -1,0 +1,3 @@
+../Encoder/encoder.c:70:6:EncoderInit	32	static
+../Encoder/encoder.c:100:9:EncoderUpdate	4	static
+../Encoder/encoder.c:182:13:EncoderSetInversion	0	static

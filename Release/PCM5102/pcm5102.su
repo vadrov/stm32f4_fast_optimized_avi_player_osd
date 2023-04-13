@@ -1,0 +1,7 @@
+../PCM5102/pcm5102.c:23:6:Init_DAC	72	static,ignoring_inline_asm
+../PCM5102/pcm5102.c:95:6:Start_DAC	24	static,ignoring_inline_asm
+../PCM5102/pcm5102.c:117:6:Update_DAC	24	static,ignoring_inline_asm
+../PCM5102/pcm5102.c:132:6:Pause_DAC	0	static
+../PCM5102/pcm5102.c:137:6:Resume_DAC	0	static
+../PCM5102/pcm5102.c:142:6:Stop_DAC	24	static,ignoring_inline_asm
+../PCM5102/pcm5102.c:154:9:Setup_DAC	208	static,ignoring_inline_asm

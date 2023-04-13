@@ -1,0 +1,6 @@
+bitstream.c:60:6:xmp3_SetBitstreamPointer	1
+bitstream.c:129:14:xmp3_GetBits	6
+bitstream.c:165:5:xmp3_CalcBitsUsed	1
+bitstream.c:188:5:xmp3_CheckPadBit	3
+bitstream.c:218:5:xmp3_UnpackFrameHeader	14
+bitstream.c:299:5:xmp3_UnpackSideInfo	92

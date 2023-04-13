@@ -1,0 +1,15 @@
+../FATFS/ff.c:2726:13:get_fileinfo	32	static
+../FATFS/ff.c:3400:13:check_fs	16	static,ignoring_inline_asm
+../FATFS/ff.c:3494:16:mount_volume.constprop	24	static
+../FATFS/ff.c:1262:14:get_fat.isra	24	static
+../FATFS/ff.c:1802:16:dir_sdi.constprop	40	static
+../FATFS/ff.c:3160:16:follow_path	80	static,ignoring_inline_asm
+../FATFS/ff.c:3766:9:f_mount	16	static
+../FATFS/ff.c:3826:9:f_open	80	static
+../FATFS/ff.c:4027:9:f_read	48	static,ignoring_inline_asm
+../FATFS/ff.c:4329:9:f_close	8	static
+../FATFS/ff.c:4546:9:f_lseek	48	static
+../FATFS/ff.c:4710:9:f_opendir	24	static
+../FATFS/ff.c:4776:9:f_closedir	8	static
+../FATFS/ff.c:4806:9:f_readdir	56	static
+../FATFS/ff.c:4894:9:f_stat	72	static

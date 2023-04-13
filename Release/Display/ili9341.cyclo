@@ -1,0 +1,4 @@
+ili9341.c:88:10:ILI9341_Init	4
+ili9341.c:99:10:ILI9341_SetWindow	1
+ili9341.c:108:10:ILI9341_SleepIn	1
+ili9341.c:113:10:ILI9341_SleepOut	1

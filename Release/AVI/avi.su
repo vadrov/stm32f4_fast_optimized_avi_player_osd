@@ -1,0 +1,2 @@
+../AVI/avi.c:56:6:PlayAVI	1720	static,ignoring_inline_asm
+../AVI/avi.c:463:6:AVIIntro	120	static

@@ -1,0 +1,3 @@
+encoder.c:70:6:EncoderInit	1
+encoder.c:100:9:EncoderUpdate	19
+encoder.c:182:13:EncoderSetInversion	1

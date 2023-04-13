@@ -1,0 +1,4 @@
+jpeg_chan.c:83:19:tjd_output	2
+jpeg_chan.c:67:28:tjd_input_memory	2
+jpeg_chan.c:39:28:tjd_input_file	3
+jpeg_chan.c:107:9:LCD_Load_JPG_chan	9
