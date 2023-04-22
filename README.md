@@ -14,6 +14,9 @@ Copyright (C)2019-2023, VadRov, all right reserved.
 ![image](https://user-images.githubusercontent.com/111627147/233799770-7a0b10fd-66d6-4256-beb9-91e4e590242c.png)
 ## Подключение модуля аудио-ЦАП PCM5102:
 ![image](https://user-images.githubusercontent.com/111627147/233799861-5a9cf7d4-9ae6-48cb-aef2-774aa1f30381.png)
+## Подключение инкрементарного механического энкодера:
+![image](https://user-images.githubusercontent.com/111627147/233801356-1e604c75-00a0-4896-a546-d7579f2f6b5b.png)
+## Видео о проекте видеоплеера:
 [![Watch the video](https://img.youtube.com/vi/sC5nm7vdN6k/maxresdefault.jpg)](https://youtu.be/sC5nm7vdN6k)
 ## Требования к формату AVI:
 - поток видео mjpeg (motion jpeg), т.е. видеокадры должны быть закодированы jpeg кодеком;
