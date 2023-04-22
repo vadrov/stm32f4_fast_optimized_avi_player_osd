@@ -8,11 +8,11 @@ Copyright (C)2019-2023, VadRov, all right reserved.
 - аудио-ЦАП PCM5102;
 - инкрементарный механический энкодер;
 - конденсатор керамический 0.01-0.1 мкФ - 2 шт.
-## Подключения дисплейного модуля (на базе контроллера ILI9341):
+## Подключение дисплейного модуля (на базе контроллера ILI9341):
 ![image](https://user-images.githubusercontent.com/111627147/233799705-78c288c1-d07f-414f-806e-08f1d835d297.png)
-## Схема подключения модуля sd-карты:
+## Подключение модуля sd-карты:
 ![image](https://user-images.githubusercontent.com/111627147/233799770-7a0b10fd-66d6-4256-beb9-91e4e590242c.png)
-## Схема подключения модуля аудио-ЦАП PCM5102:
+## Подключение модуля аудио-ЦАП PCM5102:
 ![image](https://user-images.githubusercontent.com/111627147/233799861-5a9cf7d4-9ae6-48cb-aef2-774aa1f30381.png)
 [![Watch the video](https://img.youtube.com/vi/sC5nm7vdN6k/maxresdefault.jpg)](https://youtu.be/sC5nm7vdN6k)
 ## Требования к формату AVI:
