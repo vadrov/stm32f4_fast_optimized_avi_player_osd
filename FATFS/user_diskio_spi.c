@@ -107,7 +107,7 @@ static BYTE spi_rw(BYTE wval)
 	*((volatile uint8_t *)&SPI_SD->DR) = wval;
 	while(!(SPI_SD->SR & SPI_SR_RXNE)) ;
 	while (SPI_SD->SR & SPI_SR_BSY) ;
-	return SPI_SD->DR;
+	return *((volatile uint8_t *)&SPI_SD->DR);
 }
 
 #define xmit_spi(dat)		 spi_rw(dat)
