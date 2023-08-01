@@ -125,4 +125,4 @@ LCD_GenerateOffsets:
 	pop	{r7}
 	bx	lr
 	.size	LCD_GenerateOffsets, .-LCD_GenerateOffsets
-	.ident	"GCC: (GNU Tools for STM32 10.3-2021.10.20211105-1100) 10.3.1 20210824 (release)"
+	.ident	"GCC: (GNU Tools for STM32 11.3.rel1.20230519-1941) 11.3.1 20220712"

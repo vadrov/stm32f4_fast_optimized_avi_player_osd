@@ -1,2 +1,2 @@
-dqchan.c:132:12:DequantBlock	12
-dqchan.c:244:5:xmp3_DequantChannel	24
+../MP3Helix/src/dqchan.c:132:12:DequantBlock	12
+../MP3Helix/src/dqchan.c:244:5:xmp3_DequantChannel	24

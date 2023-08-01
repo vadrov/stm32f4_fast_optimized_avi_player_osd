@@ -46,8 +46,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define DISABLE_IRQ		__disable_irq()
-#define ENABLE_IRQ		__enable_irq()
+#define DISABLE_IRQ		__NOP() //__disable_irq()
+#define ENABLE_IRQ		__NOP() //__enable_irq()
 
 const char FM_audio_types[]   = ".mpa.MPA.m3u.M3U.asf.ASF.amr.AMR.aif.AIF.aiff.AIFF.ape.APE.wav.WAV.wave.WAVE.mp3.MP3.wma.WMA.aac.AAC.m4a.M4A.flac.FLAC.ogg.OGG.ac3.AC3.mid.MID.midi.MIDI.mod.MOD.";
 const char FM_picture_types[] = ".pic.PIC.pct.PCT.avif.AVIF.webp.WEBP.svg.SVG.raw.RAW.ico.ICO.eps.EPS.bmp.BMP.png.PNG.jpg.JPG.jpeg.JPEG.jpe.JPE.jfif.JFIF.gif.GIF.tga.TGA.tiff.TIFF.pcx.PCX.psd.PSD.dib.DIB.";

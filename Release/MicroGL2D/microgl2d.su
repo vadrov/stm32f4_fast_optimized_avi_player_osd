@@ -21,7 +21,7 @@
 ../MicroGL2D/microgl2d.c:294:6:MGL_SetTriangle	16	static
 ../MicroGL2D/microgl2d.c:320:6:MGL_SetCircle	0	static
 ../MicroGL2D/microgl2d.c:330:6:MGL_SetText	4	static
-../MicroGL2D/microgl2d.c:882:6:MGL_RenderObjects	160	static,ignoring_inline_asm
+../MicroGL2D/microgl2d.c:882:6:MGL_RenderObjects	152	static,ignoring_inline_asm
 ../MicroGL2D/microgl2d.c:897:6:MGL_ObjectMove	4	static
 ../MicroGL2D/microgl2d.c:931:6:MGL_ObjectListMove	32	static
 ../MicroGL2D/microgl2d.c:941:6:MGL_ObjectListTransparency	0	static

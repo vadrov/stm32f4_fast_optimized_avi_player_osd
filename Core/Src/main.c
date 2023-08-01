@@ -249,7 +249,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-	//Инициализация I2S3
+	//�?нициализация I2S3
     Init_DAC();
 	DWT_init();
 
@@ -343,8 +343,8 @@ int main(void)
 	//Будем работать с модулем Keyboard и эмулировать для него нажатие кнопок через
 	//специальную функцию, связывающую обработчик энкодера с модулем для работы с кнопками.
 	//Такую роль выполняет функция EncoderEventToKeyboard, находящаяся в файле stm32f4xx_it.c
-	KEYB_all_button = 3; //Используем 3 кнопки для модуля Keyboard
-	//Инициализируем обработчик энкодера
+	KEYB_all_button = 3; //�?спользуем 3 кнопки для модуля Keyboard
+	//�?нициализируем обработчик энкодера
 	EncoderInit(&encoder1,
 				ENCODER_A_GPIO_Port,
 				ENCODER_A_Pin,
@@ -408,7 +408,6 @@ void SystemClock_Config(void)
   {
   }
   LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE2);
-
   LL_RCC_HSE_Enable();
 
    /* Wait till HSE is ready */
@@ -424,6 +423,9 @@ void SystemClock_Config(void)
   while(LL_RCC_PLL_IsReady() != 1)
   {
 
+  }
+  while (LL_PWR_IsActiveFlag_VOS() == 0)
+  {
   }
   LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
   LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
