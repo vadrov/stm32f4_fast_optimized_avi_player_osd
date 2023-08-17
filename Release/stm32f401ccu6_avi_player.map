@@ -806,7 +806,7 @@ LOAD F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000194                . = ALIGN (0x4)
 
-.text           0x0000000008000198    0x113e0
+.text           0x0000000008000198    0x113dc
                 0x0000000008000198                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000198       0x40 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -921,805 +921,805 @@ LOAD F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000008002f1c        0xc ./Core/Src/stm32f4xx_it.o
                 0x0000000008002f1c                DMA2_Stream3_IRQHandler
  .text.DMA1_Stream5_IRQHandler
-                0x0000000008002f28       0xbc ./Core/Src/stm32f4xx_it.o
+                0x0000000008002f28       0xb8 ./Core/Src/stm32f4xx_it.o
                 0x0000000008002f28                DMA1_Stream5_IRQHandler
- .text._sbrk    0x0000000008002fe4       0x44 ./Core/Src/sysmem.o
-                0x0000000008002fe4                _sbrk
+ .text._sbrk    0x0000000008002fe0       0x44 ./Core/Src/sysmem.o
+                0x0000000008002fe0                _sbrk
  .text.SystemInit
-                0x0000000008003028       0x14 ./Core/Src/system_stm32f4xx.o
-                0x0000000008003028                SystemInit
+                0x0000000008003024       0x14 ./Core/Src/system_stm32f4xx.o
+                0x0000000008003024                SystemInit
  .text.Reset_Handler
-                0x000000000800303c       0x50 ./Core/Startup/startup_stm32f401ccux.o
-                0x000000000800303c                Reset_Handler
+                0x0000000008003038       0x50 ./Core/Startup/startup_stm32f401ccux.o
+                0x0000000008003038                Reset_Handler
  .text.Default_Handler
-                0x000000000800308c        0x2 ./Core/Startup/startup_stm32f401ccux.o
-                0x000000000800308c                RTC_Alarm_IRQHandler
-                0x000000000800308c                EXTI2_IRQHandler
-                0x000000000800308c                SPI4_IRQHandler
-                0x000000000800308c                TIM1_CC_IRQHandler
-                0x000000000800308c                DMA2_Stream5_IRQHandler
-                0x000000000800308c                PVD_IRQHandler
-                0x000000000800308c                SDIO_IRQHandler
-                0x000000000800308c                TAMP_STAMP_IRQHandler
-                0x000000000800308c                EXTI3_IRQHandler
-                0x000000000800308c                TIM1_UP_TIM10_IRQHandler
-                0x000000000800308c                I2C3_ER_IRQHandler
-                0x000000000800308c                I2C2_EV_IRQHandler
-                0x000000000800308c                DMA1_Stream2_IRQHandler
-                0x000000000800308c                FPU_IRQHandler
-                0x000000000800308c                DMA2_Stream2_IRQHandler
-                0x000000000800308c                SPI1_IRQHandler
-                0x000000000800308c                TIM1_BRK_TIM9_IRQHandler
-                0x000000000800308c                USART6_IRQHandler
-                0x000000000800308c                DMA2_Stream0_IRQHandler
-                0x000000000800308c                TIM4_IRQHandler
-                0x000000000800308c                I2C1_EV_IRQHandler
-                0x000000000800308c                DMA1_Stream6_IRQHandler
-                0x000000000800308c                DMA1_Stream1_IRQHandler
-                0x000000000800308c                TIM3_IRQHandler
-                0x000000000800308c                RCC_IRQHandler
-                0x000000000800308c                Default_Handler
-                0x000000000800308c                ADC_IRQHandler
-                0x000000000800308c                DMA1_Stream7_IRQHandler
-                0x000000000800308c                TIM5_IRQHandler
-                0x000000000800308c                DMA2_Stream7_IRQHandler
-                0x000000000800308c                I2C3_EV_IRQHandler
-                0x000000000800308c                EXTI9_5_IRQHandler
-                0x000000000800308c                RTC_WKUP_IRQHandler
-                0x000000000800308c                SPI2_IRQHandler
-                0x000000000800308c                DMA1_Stream0_IRQHandler
-                0x000000000800308c                EXTI4_IRQHandler
-                0x000000000800308c                WWDG_IRQHandler
-                0x000000000800308c                TIM2_IRQHandler
-                0x000000000800308c                OTG_FS_WKUP_IRQHandler
-                0x000000000800308c                TIM1_TRG_COM_TIM11_IRQHandler
-                0x000000000800308c                USART2_IRQHandler
-                0x000000000800308c                I2C2_ER_IRQHandler
-                0x000000000800308c                DMA2_Stream1_IRQHandler
-                0x000000000800308c                FLASH_IRQHandler
-                0x000000000800308c                DMA2_Stream4_IRQHandler
-                0x000000000800308c                USART1_IRQHandler
-                0x000000000800308c                OTG_FS_IRQHandler
-                0x000000000800308c                SPI3_IRQHandler
-                0x000000000800308c                I2C1_ER_IRQHandler
-                0x000000000800308c                DMA2_Stream6_IRQHandler
- *fill*         0x000000000800308e        0x2 
+                0x0000000008003088        0x2 ./Core/Startup/startup_stm32f401ccux.o
+                0x0000000008003088                RTC_Alarm_IRQHandler
+                0x0000000008003088                EXTI2_IRQHandler
+                0x0000000008003088                SPI4_IRQHandler
+                0x0000000008003088                TIM1_CC_IRQHandler
+                0x0000000008003088                DMA2_Stream5_IRQHandler
+                0x0000000008003088                PVD_IRQHandler
+                0x0000000008003088                SDIO_IRQHandler
+                0x0000000008003088                TAMP_STAMP_IRQHandler
+                0x0000000008003088                EXTI3_IRQHandler
+                0x0000000008003088                TIM1_UP_TIM10_IRQHandler
+                0x0000000008003088                I2C3_ER_IRQHandler
+                0x0000000008003088                I2C2_EV_IRQHandler
+                0x0000000008003088                DMA1_Stream2_IRQHandler
+                0x0000000008003088                FPU_IRQHandler
+                0x0000000008003088                DMA2_Stream2_IRQHandler
+                0x0000000008003088                SPI1_IRQHandler
+                0x0000000008003088                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008003088                USART6_IRQHandler
+                0x0000000008003088                DMA2_Stream0_IRQHandler
+                0x0000000008003088                TIM4_IRQHandler
+                0x0000000008003088                I2C1_EV_IRQHandler
+                0x0000000008003088                DMA1_Stream6_IRQHandler
+                0x0000000008003088                DMA1_Stream1_IRQHandler
+                0x0000000008003088                TIM3_IRQHandler
+                0x0000000008003088                RCC_IRQHandler
+                0x0000000008003088                Default_Handler
+                0x0000000008003088                ADC_IRQHandler
+                0x0000000008003088                DMA1_Stream7_IRQHandler
+                0x0000000008003088                TIM5_IRQHandler
+                0x0000000008003088                DMA2_Stream7_IRQHandler
+                0x0000000008003088                I2C3_EV_IRQHandler
+                0x0000000008003088                EXTI9_5_IRQHandler
+                0x0000000008003088                RTC_WKUP_IRQHandler
+                0x0000000008003088                SPI2_IRQHandler
+                0x0000000008003088                DMA1_Stream0_IRQHandler
+                0x0000000008003088                EXTI4_IRQHandler
+                0x0000000008003088                WWDG_IRQHandler
+                0x0000000008003088                TIM2_IRQHandler
+                0x0000000008003088                OTG_FS_WKUP_IRQHandler
+                0x0000000008003088                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008003088                USART2_IRQHandler
+                0x0000000008003088                I2C2_ER_IRQHandler
+                0x0000000008003088                DMA2_Stream1_IRQHandler
+                0x0000000008003088                FLASH_IRQHandler
+                0x0000000008003088                DMA2_Stream4_IRQHandler
+                0x0000000008003088                USART1_IRQHandler
+                0x0000000008003088                OTG_FS_IRQHandler
+                0x0000000008003088                SPI3_IRQHandler
+                0x0000000008003088                I2C1_ER_IRQHandler
+                0x0000000008003088                DMA2_Stream6_IRQHandler
+ *fill*         0x000000000800308a        0x2 
  .text.LCD_SetCS
-                0x0000000008003090        0xc ./Display/display.o
-                0x0000000008003090                LCD_SetCS
+                0x000000000800308c        0xc ./Display/display.o
+                0x000000000800308c                LCD_SetCS
  .text.LCD_ResCS
-                0x000000000800309c       0x10 ./Display/display.o
-                0x000000000800309c                LCD_ResCS
+                0x0000000008003098       0x10 ./Display/display.o
+                0x0000000008003098                LCD_ResCS
  .text.LCD_SetDC
-                0x00000000080030ac        0x8 ./Display/display.o
-                0x00000000080030ac                LCD_SetDC
+                0x00000000080030a8        0x8 ./Display/display.o
+                0x00000000080030a8                LCD_SetDC
  .text.LCD_String_Interpretator
-                0x00000000080030b4      0x124 ./Display/display.o
-                0x00000000080030b4                LCD_String_Interpretator
+                0x00000000080030b0      0x124 ./Display/display.o
+                0x00000000080030b0                LCD_String_Interpretator
  .text.LCD_DisplayAdd
-                0x00000000080031d8      0x1d8 ./Display/display.o
-                0x00000000080031d8                LCD_DisplayAdd
+                0x00000000080031d4      0x1d8 ./Display/display.o
+                0x00000000080031d4                LCD_DisplayAdd
  .text.LCD_Init
-                0x00000000080033b0       0xa8 ./Display/display.o
-                0x00000000080033b0                LCD_Init
+                0x00000000080033ac       0xa8 ./Display/display.o
+                0x00000000080033ac                LCD_Init
  .text.LCD_Fill
-                0x0000000008003458       0x20 ./Display/display.o
-                0x0000000008003458                LCD_Fill
+                0x0000000008003454       0x20 ./Display/display.o
+                0x0000000008003454                LCD_Fill
  .text.LCD_DrawLine
-                0x0000000008003478      0x1a0 ./Display/display.o
-                0x0000000008003478                LCD_DrawLine
+                0x0000000008003474      0x1a0 ./Display/display.o
+                0x0000000008003474                LCD_DrawLine
  .text.LCD_DrawRectangle
-                0x0000000008003618       0x58 ./Display/display.o
-                0x0000000008003618                LCD_DrawRectangle
+                0x0000000008003614       0x58 ./Display/display.o
+                0x0000000008003614                LCD_DrawRectangle
  .text.LCD_DrawFilledRectangle
-                0x0000000008003670       0x54 ./Display/display.o
-                0x0000000008003670                LCD_DrawFilledRectangle
+                0x000000000800366c       0x54 ./Display/display.o
+                0x000000000800366c                LCD_DrawFilledRectangle
  .text.LCD_WriteChar
-                0x00000000080036c4      0x2bc ./Display/display.o
-                0x00000000080036c4                LCD_WriteChar
+                0x00000000080036c0      0x2bc ./Display/display.o
+                0x00000000080036c0                LCD_WriteChar
  .text.LCD_WriteString
-                0x0000000008003980       0x68 ./Display/display.o
-                0x0000000008003980                LCD_WriteString
+                0x000000000800397c       0x68 ./Display/display.o
+                0x000000000800397c                LCD_WriteString
  .text.LCD_SetActiveWindow
-                0x00000000080039e8       0xc4 ./Display/display_asm.o
-                0x00000000080039e8                LCD_SetActiveWindow
+                0x00000000080039e4       0xc4 ./Display/display_asm.o
+                0x00000000080039e4                LCD_SetActiveWindow
  .text.LCD_WriteData
-                0x0000000008003aac       0x68 ./Display/display_asm.o
-                0x0000000008003aac                LCD_WriteData
+                0x0000000008003aa8       0x68 ./Display/display_asm.o
+                0x0000000008003aa8                LCD_WriteData
  .text.LCD_WriteDataDMA
-                0x0000000008003b14       0x8e ./Display/display_asm.o
-                0x0000000008003b14                LCD_WriteDataDMA
+                0x0000000008003b10       0x8e ./Display/display_asm.o
+                0x0000000008003b10                LCD_WriteDataDMA
  .text.LCD_FillWindow
-                0x0000000008003ba2       0x8c ./Display/display_asm.o
-                0x0000000008003ba2                LCD_FillWindow
+                0x0000000008003b9e       0x8c ./Display/display_asm.o
+                0x0000000008003b9e                LCD_FillWindow
  .text.LCD_DrawImage
-                0x0000000008003c2e       0x50 ./Display/display_asm.o
-                0x0000000008003c2e                LCD_DrawImage
- *fill*         0x0000000008003c7e        0x2 
+                0x0000000008003c2a       0x50 ./Display/display_asm.o
+                0x0000000008003c2a                LCD_DrawImage
+ *fill*         0x0000000008003c7a        0x2 
  .text.Display_TC_Callback
-                0x0000000008003c80       0x90 ./Display/display_asm.o
-                0x0000000008003c80                Display_TC_Callback
+                0x0000000008003c7c       0x90 ./Display/display_asm.o
+                0x0000000008003c7c                Display_TC_Callback
  .text.ILI9341_Init
-                0x0000000008003d10       0x1c ./Display/ili9341.o
-                0x0000000008003d10                ILI9341_Init
+                0x0000000008003d0c       0x1c ./Display/ili9341.o
+                0x0000000008003d0c                ILI9341_Init
  .text.ILI9341_SetWindow
-                0x0000000008003d2c       0x48 ./Display/ili9341.o
-                0x0000000008003d2c                ILI9341_SetWindow
+                0x0000000008003d28       0x48 ./Display/ili9341.o
+                0x0000000008003d28                ILI9341_SetWindow
  .text.ILI9341_SleepIn
-                0x0000000008003d74        0x8 ./Display/ili9341.o
-                0x0000000008003d74                ILI9341_SleepIn
+                0x0000000008003d70        0x8 ./Display/ili9341.o
+                0x0000000008003d70                ILI9341_SleepIn
  .text.ILI9341_SleepOut
-                0x0000000008003d7c        0x8 ./Display/ili9341.o
-                0x0000000008003d7c                ILI9341_SleepOut
+                0x0000000008003d78        0x8 ./Display/ili9341.o
+                0x0000000008003d78                ILI9341_SleepOut
  .text.LL_EXTI_Init
-                0x0000000008003d84       0xbc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
-                0x0000000008003d84                LL_EXTI_Init
+                0x0000000008003d80       0xbc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+                0x0000000008003d80                LL_EXTI_Init
  .text.LL_GPIO_Init
-                0x0000000008003e40      0x148 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
-                0x0000000008003e40                LL_GPIO_Init
+                0x0000000008003e3c      0x148 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+                0x0000000008003e3c                LL_GPIO_Init
  .text.LL_RCC_GetI2SClockFreq
-                0x0000000008003f88       0x68 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
-                0x0000000008003f88                LL_RCC_GetI2SClockFreq
+                0x0000000008003f84       0x68 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.o
+                0x0000000008003f84                LL_RCC_GetI2SClockFreq
  .text.LL_SPI_Init
-                0x0000000008003ff0       0x70 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o
-                0x0000000008003ff0                LL_SPI_Init
+                0x0000000008003fec       0x70 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o
+                0x0000000008003fec                LL_SPI_Init
  .text.LL_I2S_Init
-                0x0000000008004060       0x98 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o
-                0x0000000008004060                LL_I2S_Init
+                0x000000000800405c       0x98 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_spi.o
+                0x000000000800405c                LL_I2S_Init
  .text.LL_TIM_Init
-                0x00000000080040f8       0x98 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
-                0x00000000080040f8                LL_TIM_Init
+                0x00000000080040f4       0x98 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+                0x00000000080040f4                LL_TIM_Init
  .text.LL_TIM_OC_Init
-                0x0000000008004190      0x1b0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
-                0x0000000008004190                LL_TIM_OC_Init
+                0x000000000800418c      0x1b0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+                0x000000000800418c                LL_TIM_OC_Init
  .text.LL_Init1msTick
-                0x0000000008004340       0x20 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
-                0x0000000008004340                LL_Init1msTick
+                0x000000000800433c       0x20 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+                0x000000000800433c                LL_Init1msTick
  .text.LL_mDelay
-                0x0000000008004360       0x24 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
-                0x0000000008004360                LL_mDelay
+                0x000000000800435c       0x24 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+                0x000000000800435c                LL_mDelay
  .text.LL_SetSystemCoreClock
-                0x0000000008004384        0xc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
-                0x0000000008004384                LL_SetSystemCoreClock
+                0x0000000008004380        0xc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+                0x0000000008004380                LL_SetSystemCoreClock
  .text.EncoderInit
-                0x0000000008004390       0x34 ./Encoder/encoder.o
-                0x0000000008004390                EncoderInit
+                0x000000000800438c       0x34 ./Encoder/encoder.o
+                0x000000000800438c                EncoderInit
  .text.EncoderUpdate
-                0x00000000080043c4      0x154 ./Encoder/encoder.o
-                0x00000000080043c4                EncoderUpdate
+                0x00000000080043c0      0x154 ./Encoder/encoder.o
+                0x00000000080043c0                EncoderUpdate
  .text.EncoderSetInversion
-                0x0000000008004518        0x8 ./Encoder/encoder.o
-                0x0000000008004518                EncoderSetInversion
+                0x0000000008004514        0x8 ./Encoder/encoder.o
+                0x0000000008004514                EncoderSetInversion
  .text.disk_status
-                0x0000000008004520        0x4 ./FATFS/diskio.o
-                0x0000000008004520                disk_status
+                0x000000000800451c        0x4 ./FATFS/diskio.o
+                0x000000000800451c                disk_status
  .text.disk_initialize
-                0x0000000008004524        0x4 ./FATFS/diskio.o
-                0x0000000008004524                disk_initialize
+                0x0000000008004520        0x4 ./FATFS/diskio.o
+                0x0000000008004520                disk_initialize
  .text.disk_read
-                0x0000000008004528       0x1c ./FATFS/diskio.o
-                0x0000000008004528                disk_read
+                0x0000000008004524       0x1c ./FATFS/diskio.o
+                0x0000000008004524                disk_read
  .text.get_fileinfo
-                0x0000000008004544      0x228 ./FATFS/ff.o
+                0x0000000008004540      0x228 ./FATFS/ff.o
  .text.check_fs
-                0x000000000800476c       0xf8 ./FATFS/ff.o
+                0x0000000008004768       0xf8 ./FATFS/ff.o
  .text.mount_volume.constprop.0
-                0x0000000008004864      0x208 ./FATFS/ff.o
+                0x0000000008004860      0x208 ./FATFS/ff.o
  .text.get_fat.isra.0
-                0x0000000008004a6c       0xf8 ./FATFS/ff.o
+                0x0000000008004a68       0xf8 ./FATFS/ff.o
  .text.dir_sdi.constprop.0
-                0x0000000008004b64      0x178 ./FATFS/ff.o
+                0x0000000008004b60      0x178 ./FATFS/ff.o
  .text.follow_path
-                0x0000000008004cdc      0x638 ./FATFS/ff.o
- .text.f_mount  0x0000000008005314       0x64 ./FATFS/ff.o
-                0x0000000008005314                f_mount
- .text.f_open   0x0000000008005378       0x7c ./FATFS/ff.o
-                0x0000000008005378                f_open
- .text.f_read   0x00000000080053f4      0x174 ./FATFS/ff.o
-                0x00000000080053f4                f_read
- .text.f_close  0x0000000008005568       0x30 ./FATFS/ff.o
-                0x0000000008005568                f_close
- .text.f_lseek  0x0000000008005598      0x230 ./FATFS/ff.o
-                0x0000000008005598                f_lseek
+                0x0000000008004cd8      0x638 ./FATFS/ff.o
+ .text.f_mount  0x0000000008005310       0x64 ./FATFS/ff.o
+                0x0000000008005310                f_mount
+ .text.f_open   0x0000000008005374       0x7c ./FATFS/ff.o
+                0x0000000008005374                f_open
+ .text.f_read   0x00000000080053f0      0x174 ./FATFS/ff.o
+                0x00000000080053f0                f_read
+ .text.f_close  0x0000000008005564       0x30 ./FATFS/ff.o
+                0x0000000008005564                f_close
+ .text.f_lseek  0x0000000008005594      0x230 ./FATFS/ff.o
+                0x0000000008005594                f_lseek
  .text.f_opendir
-                0x00000000080057c8       0x70 ./FATFS/ff.o
-                0x00000000080057c8                f_opendir
+                0x00000000080057c4       0x70 ./FATFS/ff.o
+                0x00000000080057c4                f_opendir
  .text.f_closedir
-                0x0000000008005838       0x30 ./FATFS/ff.o
-                0x0000000008005838                f_closedir
+                0x0000000008005834       0x30 ./FATFS/ff.o
+                0x0000000008005834                f_closedir
  .text.f_readdir
-                0x0000000008005868      0x46c ./FATFS/ff.o
-                0x0000000008005868                f_readdir
+                0x0000000008005864      0x46c ./FATFS/ff.o
+                0x0000000008005864                f_readdir
  .text.ff_uni2oem
-                0x0000000008005cd4       0x44 ./FATFS/ffunicode.o
-                0x0000000008005cd4                ff_uni2oem
+                0x0000000008005cd0       0x44 ./FATFS/ffunicode.o
+                0x0000000008005cd0                ff_uni2oem
  .text.ff_oem2uni
-                0x0000000008005d18       0x28 ./FATFS/ffunicode.o
-                0x0000000008005d18                ff_oem2uni
+                0x0000000008005d14       0x28 ./FATFS/ffunicode.o
+                0x0000000008005d14                ff_oem2uni
  .text.ff_wtoupper
-                0x0000000008005d40       0xa8 ./FATFS/ffunicode.o
-                0x0000000008005d40                ff_wtoupper
+                0x0000000008005d3c       0xa8 ./FATFS/ffunicode.o
+                0x0000000008005d3c                ff_wtoupper
  .text.SPI_DMA_TransmitReceive
-                0x0000000008005de8      0x118 ./FATFS/user_diskio_spi.o
+                0x0000000008005de4      0x118 ./FATFS/user_diskio_spi.o
  .text.rcvr_datablock
-                0x0000000008005f00       0x7c ./FATFS/user_diskio_spi.o
+                0x0000000008005efc       0x7c ./FATFS/user_diskio_spi.o
  .text.send_cmd
-                0x0000000008005f7c      0x118 ./FATFS/user_diskio_spi.o
+                0x0000000008005f78      0x118 ./FATFS/user_diskio_spi.o
  .text.USER_SPI_initialize
-                0x0000000008006094      0x1fc ./FATFS/user_diskio_spi.o
-                0x0000000008006094                USER_SPI_initialize
+                0x0000000008006090      0x1fc ./FATFS/user_diskio_spi.o
+                0x0000000008006090                USER_SPI_initialize
  .text.USER_SPI_status
-                0x0000000008006290        0xc ./FATFS/user_diskio_spi.o
-                0x0000000008006290                USER_SPI_status
+                0x000000000800628c        0xc ./FATFS/user_diskio_spi.o
+                0x000000000800628c                USER_SPI_status
  .text.USER_SPI_read
-                0x000000000800629c      0x108 ./FATFS/user_diskio_spi.o
-                0x000000000800629c                USER_SPI_read
+                0x0000000008006298      0x108 ./FATFS/user_diskio_spi.o
+                0x0000000008006298                USER_SPI_read
  .text.FileManagerSetDisplay
-                0x00000000080063a4        0x4 ./FileManager/filemanager.o
+                0x00000000080063a0        0x4 ./FileManager/filemanager.o
  .text.FileManagerSetWin
-                0x00000000080063a8        0xc ./FileManager/filemanager.o
+                0x00000000080063a4        0xc ./FileManager/filemanager.o
  .text.FileManagerSetColor
-                0x00000000080063b4        0x4 ./FileManager/filemanager.o
+                0x00000000080063b0        0x4 ./FileManager/filemanager.o
  .text.FileManagerSetFont
-                0x00000000080063b8        0x4 ./FileManager/filemanager.o
+                0x00000000080063b4        0x4 ./FileManager/filemanager.o
  .text.FileManagerSetKeys
-                0x00000000080063bc       0x10 ./FileManager/filemanager.o
+                0x00000000080063b8       0x10 ./FileManager/filemanager.o
  .text.FileManagerChangeActiveFlag
-                0x00000000080063cc        0x8 ./FileManager/filemanager.o
+                0x00000000080063c8        0x8 ./FileManager/filemanager.o
  .text.FileManagerGetStatus
-                0x00000000080063d4        0x8 ./FileManager/filemanager.o
+                0x00000000080063d0        0x8 ./FileManager/filemanager.o
  .text.FileManagerGetFilePath
-                0x00000000080063dc        0x4 ./FileManager/filemanager.o
+                0x00000000080063d8        0x4 ./FileManager/filemanager.o
  .text.FileManagerGetFileName
-                0x00000000080063e0        0x4 ./FileManager/filemanager.o
+                0x00000000080063dc        0x4 ./FileManager/filemanager.o
  .text.FileManagerShow
-                0x00000000080063e4      0xa4c ./FileManager/filemanager.o
+                0x00000000080063e0      0xa4c ./FileManager/filemanager.o
  .text.FileManagerNew
-                0x0000000008006e30       0x84 ./FileManager/filemanager.o
-                0x0000000008006e30                FileManagerNew
+                0x0000000008006e2c       0x84 ./FileManager/filemanager.o
+                0x0000000008006e2c                FileManagerNew
  .text.FileManagerPopupWin
-                0x0000000008006eb4       0xf4 ./FileManager/filemanager.o
-                0x0000000008006eb4                FileManagerPopupWin
+                0x0000000008006eb0       0xf4 ./FileManager/filemanager.o
+                0x0000000008006eb0                FileManagerPopupWin
  .text.tjd_output
-                0x0000000008006fa8       0x98 ./JPEG/jpeg_chan.o
+                0x0000000008006fa4       0x98 ./JPEG/jpeg_chan.o
  .text.tjd_input_memory
-                0x0000000008007040       0x30 ./JPEG/jpeg_chan.o
+                0x000000000800703c       0x30 ./JPEG/jpeg_chan.o
  .text.tjd_input_file
-                0x0000000008007070       0x78 ./JPEG/jpeg_chan.o
+                0x000000000800706c       0x78 ./JPEG/jpeg_chan.o
  .text.LCD_Load_JPG_chan
-                0x00000000080070e8       0xc4 ./JPEG/jpeg_chan.o
-                0x00000000080070e8                LCD_Load_JPG_chan
+                0x00000000080070e4       0xc4 ./JPEG/jpeg_chan.o
+                0x00000000080070e4                LCD_Load_JPG_chan
  .text.jd_prepare
-                0x00000000080071ac      0x924 ./JPEG/tjpgd.o
-                0x00000000080071ac                jd_prepare
+                0x00000000080071a8      0x924 ./JPEG/tjpgd.o
+                0x00000000080071a8                jd_prepare
  .text.jd_decomp
-                0x0000000008007ad0      0xf64 ./JPEG/tjpgd.o
-                0x0000000008007ad0                jd_decomp
+                0x0000000008007acc      0xf64 ./JPEG/tjpgd.o
+                0x0000000008007acc                jd_decomp
  .text.KEYB_Inkeys
-                0x0000000008008a34       0x3c ./Keyboard/keyboard.o
-                0x0000000008008a34                KEYB_Inkeys
+                0x0000000008008a30       0x3c ./Keyboard/keyboard.o
+                0x0000000008008a30                KEYB_Inkeys
  .text.KEYB_kbhit
-                0x0000000008008a70       0x1c ./Keyboard/keyboard.o
-                0x0000000008008a70                KEYB_kbhit
+                0x0000000008008a6c       0x1c ./Keyboard/keyboard.o
+                0x0000000008008a6c                KEYB_kbhit
  .text.xmp3_SetBitstreamPointer
-                0x0000000008008a8c        0xc ./MP3Helix/src/bitstream.o
-                0x0000000008008a8c                xmp3_SetBitstreamPointer
+                0x0000000008008a88        0xc ./MP3Helix/src/bitstream.o
+                0x0000000008008a88                xmp3_SetBitstreamPointer
  .text.xmp3_GetBits
-                0x0000000008008a98       0xcc ./MP3Helix/src/bitstream.o
-                0x0000000008008a98                xmp3_GetBits
+                0x0000000008008a94       0xcc ./MP3Helix/src/bitstream.o
+                0x0000000008008a94                xmp3_GetBits
  .text.xmp3_CalcBitsUsed
-                0x0000000008008b64       0x14 ./MP3Helix/src/bitstream.o
-                0x0000000008008b64                xmp3_CalcBitsUsed
+                0x0000000008008b60       0x14 ./MP3Helix/src/bitstream.o
+                0x0000000008008b60                xmp3_CalcBitsUsed
  .text.xmp3_CheckPadBit
-                0x0000000008008b78       0x18 ./MP3Helix/src/bitstream.o
-                0x0000000008008b78                xmp3_CheckPadBit
+                0x0000000008008b74       0x18 ./MP3Helix/src/bitstream.o
+                0x0000000008008b74                xmp3_CheckPadBit
  .text.xmp3_UnpackFrameHeader
-                0x0000000008008b90      0x1c8 ./MP3Helix/src/bitstream.o
-                0x0000000008008b90                xmp3_UnpackFrameHeader
+                0x0000000008008b8c      0x1c8 ./MP3Helix/src/bitstream.o
+                0x0000000008008b8c                xmp3_UnpackFrameHeader
  .text.xmp3_UnpackSideInfo
-                0x0000000008008d58     0x117c ./MP3Helix/src/bitstream.o
-                0x0000000008008d58                xmp3_UnpackSideInfo
+                0x0000000008008d54     0x117c ./MP3Helix/src/bitstream.o
+                0x0000000008008d54                xmp3_UnpackSideInfo
  .text.xmp3_FreeBuffers
-                0x0000000008009ed4       0x4c ./MP3Helix/src/buffers.o
-                0x0000000008009ed4                xmp3_FreeBuffers
+                0x0000000008009ed0       0x4c ./MP3Helix/src/buffers.o
+                0x0000000008009ed0                xmp3_FreeBuffers
  .text.xmp3_AllocateBuffers
-                0x0000000008009f20       0x9c ./MP3Helix/src/buffers.o
-                0x0000000008009f20                xmp3_AllocateBuffers
+                0x0000000008009f1c       0x9c ./MP3Helix/src/buffers.o
+                0x0000000008009f1c                xmp3_AllocateBuffers
  .text.xmp3_FDCT32
-                0x0000000008009fbc      0xa08 ./MP3Helix/src/dct32.o
-                0x0000000008009fbc                xmp3_FDCT32
+                0x0000000008009fb8      0xa08 ./MP3Helix/src/dct32.o
+                0x0000000008009fb8                xmp3_FDCT32
  .text.xmp3_Dequantize
-                0x000000000800a9c4      0x34c ./MP3Helix/src/dequant.o
-                0x000000000800a9c4                xmp3_Dequantize
+                0x000000000800a9c0      0x34c ./MP3Helix/src/dequant.o
+                0x000000000800a9c0                xmp3_Dequantize
  .text.DequantBlock
-                0x000000000800ad10      0x1e4 ./MP3Helix/src/dqchan.o
+                0x000000000800ad0c      0x1e4 ./MP3Helix/src/dqchan.o
  .text.xmp3_DequantChannel
-                0x000000000800aef4      0x2d8 ./MP3Helix/src/dqchan.o
-                0x000000000800aef4                xmp3_DequantChannel
+                0x000000000800aef0      0x2d8 ./MP3Helix/src/dqchan.o
+                0x000000000800aef0                xmp3_DequantChannel
  .text.xmp3_DecodeHuffman
-                0x000000000800b1cc      0x76c ./MP3Helix/src/huffman.o
-                0x000000000800b1cc                xmp3_DecodeHuffman
+                0x000000000800b1c8      0x76c ./MP3Helix/src/huffman.o
+                0x000000000800b1c8                xmp3_DecodeHuffman
  .text.WinPrevious.part.0
-                0x000000000800b938       0xe4 ./MP3Helix/src/imdct.o
+                0x000000000800b934       0xe4 ./MP3Helix/src/imdct.o
  .text.FreqInvertRescale
-                0x000000000800ba1c      0x500 ./MP3Helix/src/imdct.o
+                0x000000000800ba18      0x500 ./MP3Helix/src/imdct.o
  .text.xmp3_IMDCT
-                0x000000000800bf1c     0x21c0 ./MP3Helix/src/imdct.o
-                0x000000000800bf1c                xmp3_IMDCT
+                0x000000000800bf18     0x21c0 ./MP3Helix/src/imdct.o
+                0x000000000800bf18                xmp3_IMDCT
  .text.MP3InitDecoder
-                0x000000000800e0dc        0x4 ./MP3Helix/src/mp3dec.o
-                0x000000000800e0dc                MP3InitDecoder
+                0x000000000800e0d8        0x4 ./MP3Helix/src/mp3dec.o
+                0x000000000800e0d8                MP3InitDecoder
  .text.MP3FreeDecoder
-                0x000000000800e0e0        0x8 ./MP3Helix/src/mp3dec.o
-                0x000000000800e0e0                MP3FreeDecoder
+                0x000000000800e0dc        0x8 ./MP3Helix/src/mp3dec.o
+                0x000000000800e0dc                MP3FreeDecoder
  .text.MP3Decode
-                0x000000000800e0e8      0x48c ./MP3Helix/src/mp3dec.o
-                0x000000000800e0e8                MP3Decode
+                0x000000000800e0e4      0x48c ./MP3Helix/src/mp3dec.o
+                0x000000000800e0e4                MP3Decode
  .text.xmp3_UnpackScaleFactors
-                0x000000000800e574      0x8d8 ./MP3Helix/src/scalfact.o
-                0x000000000800e574                xmp3_UnpackScaleFactors
+                0x000000000800e570      0x8d8 ./MP3Helix/src/scalfact.o
+                0x000000000800e570                xmp3_UnpackScaleFactors
  .text.xmp3_MidSideProc
-                0x000000000800ee4c       0x68 ./MP3Helix/src/stproc.o
-                0x000000000800ee4c                xmp3_MidSideProc
+                0x000000000800ee48       0x68 ./MP3Helix/src/stproc.o
+                0x000000000800ee48                xmp3_MidSideProc
  .text.xmp3_IntensityProcMPEG1
-                0x000000000800eeb4      0x334 ./MP3Helix/src/stproc.o
-                0x000000000800eeb4                xmp3_IntensityProcMPEG1
+                0x000000000800eeb0      0x334 ./MP3Helix/src/stproc.o
+                0x000000000800eeb0                xmp3_IntensityProcMPEG1
  .text.xmp3_IntensityProcMPEG2
-                0x000000000800f1e8      0x27c ./MP3Helix/src/stproc.o
-                0x000000000800f1e8                xmp3_IntensityProcMPEG2
+                0x000000000800f1e4      0x27c ./MP3Helix/src/stproc.o
+                0x000000000800f1e4                xmp3_IntensityProcMPEG2
  .text.xmp3_Subband
-                0x000000000800f464      0x11c ./MP3Helix/src/subband.o
-                0x000000000800f464                xmp3_Subband
+                0x000000000800f460      0x11c ./MP3Helix/src/subband.o
+                0x000000000800f460                xmp3_Subband
  .text.GRAPH_getcolor_unknow
-                0x000000000800f580       0x14 ./MicroGL2D/microgl2d.o
+                0x000000000800f57c       0x14 ./MicroGL2D/microgl2d.o
  .text.GRAPH_getcolor_R3G3B2
-                0x000000000800f594       0x28 ./MicroGL2D/microgl2d.o
+                0x000000000800f590       0x28 ./MicroGL2D/microgl2d.o
  .text.GRAPH_getcolor_R5G6B5
-                0x000000000800f5bc       0x28 ./MicroGL2D/microgl2d.o
+                0x000000000800f5b8       0x28 ./MicroGL2D/microgl2d.o
  .text.GRAPH_getcolor_A4R4G4B4
-                0x000000000800f5e4       0x24 ./MicroGL2D/microgl2d.o
+                0x000000000800f5e0       0x24 ./MicroGL2D/microgl2d.o
  .text.GRAPH_getcolor_R8G8B8
-                0x000000000800f608       0x18 ./MicroGL2D/microgl2d.o
+                0x000000000800f604       0x18 ./MicroGL2D/microgl2d.o
  .text.GRAPH_getcolor_A8R8G8B8
-                0x000000000800f620       0x18 ./MicroGL2D/microgl2d.o
+                0x000000000800f61c       0x18 ./MicroGL2D/microgl2d.o
  .text.MGL_setcolorbuffer
-                0x000000000800f638      0xa3c ./MicroGL2D/microgl2d.o
+                0x000000000800f634      0xa3c ./MicroGL2D/microgl2d.o
  .text.MGL_GradientCreate
-                0x0000000008010074       0x14 ./MicroGL2D/microgl2d.o
-                0x0000000008010074                MGL_GradientCreate
+                0x0000000008010070       0x14 ./MicroGL2D/microgl2d.o
+                0x0000000008010070                MGL_GradientCreate
  .text.MGL_GradientDelete
-                0x0000000008010088       0x24 ./MicroGL2D/microgl2d.o
-                0x0000000008010088                MGL_GradientDelete
+                0x0000000008010084       0x24 ./MicroGL2D/microgl2d.o
+                0x0000000008010084                MGL_GradientDelete
  .text.MGL_GradientAddColor
-                0x00000000080100ac       0x68 ./MicroGL2D/microgl2d.o
-                0x00000000080100ac                MGL_GradientAddColor
+                0x00000000080100a8       0x68 ./MicroGL2D/microgl2d.o
+                0x00000000080100a8                MGL_GradientAddColor
  .text.MGL_GradientSetDeg
-                0x0000000008010114        0x4 ./MicroGL2D/microgl2d.o
-                0x0000000008010114                MGL_GradientSetDeg
+                0x0000000008010110        0x4 ./MicroGL2D/microgl2d.o
+                0x0000000008010110                MGL_GradientSetDeg
  .text.MGL_ObjectAdd
-                0x0000000008010118       0x70 ./MicroGL2D/microgl2d.o
-                0x0000000008010118                MGL_ObjectAdd
+                0x0000000008010114       0x70 ./MicroGL2D/microgl2d.o
+                0x0000000008010114                MGL_ObjectAdd
  .text.MGL_ObjectsListDelete
-                0x0000000008010188       0x44 ./MicroGL2D/microgl2d.o
-                0x0000000008010188                MGL_ObjectsListDelete
+                0x0000000008010184       0x44 ./MicroGL2D/microgl2d.o
+                0x0000000008010184                MGL_ObjectsListDelete
  .text.MGL_ObjectSetTexture
-                0x00000000080101cc        0x4 ./MicroGL2D/microgl2d.o
-                0x00000000080101cc                MGL_ObjectSetTexture
+                0x00000000080101c8        0x4 ./MicroGL2D/microgl2d.o
+                0x00000000080101c8                MGL_ObjectSetTexture
  .text.MGL_ObjectSetGradient
-                0x00000000080101d0        0x4 ./MicroGL2D/microgl2d.o
-                0x00000000080101d0                MGL_ObjectSetGradient
+                0x00000000080101cc        0x4 ./MicroGL2D/microgl2d.o
+                0x00000000080101cc                MGL_ObjectSetGradient
  .text.MGL_ObjectSetTransparency
-                0x00000000080101d4        0x4 ./MicroGL2D/microgl2d.o
-                0x00000000080101d4                MGL_ObjectSetTransparency
+                0x00000000080101d0        0x4 ./MicroGL2D/microgl2d.o
+                0x00000000080101d0                MGL_ObjectSetTransparency
  .text.MGL_ObjectSetVisible
-                0x00000000080101d8        0x4 ./MicroGL2D/microgl2d.o
-                0x00000000080101d8                MGL_ObjectSetVisible
+                0x00000000080101d4        0x4 ./MicroGL2D/microgl2d.o
+                0x00000000080101d4                MGL_ObjectSetVisible
  .text.MGL_SetRectangle
-                0x00000000080101dc       0x2c ./MicroGL2D/microgl2d.o
-                0x00000000080101dc                MGL_SetRectangle
+                0x00000000080101d8       0x2c ./MicroGL2D/microgl2d.o
+                0x00000000080101d8                MGL_SetRectangle
  .text.MGL_SetTriangle
-                0x0000000008010208       0x64 ./MicroGL2D/microgl2d.o
-                0x0000000008010208                MGL_SetTriangle
+                0x0000000008010204       0x64 ./MicroGL2D/microgl2d.o
+                0x0000000008010204                MGL_SetTriangle
  .text.MGL_SetCircle
-                0x000000000801026c       0x10 ./MicroGL2D/microgl2d.o
-                0x000000000801026c                MGL_SetCircle
+                0x0000000008010268       0x10 ./MicroGL2D/microgl2d.o
+                0x0000000008010268                MGL_SetCircle
  .text.MGL_SetText
-                0x000000000801027c       0x1c ./MicroGL2D/microgl2d.o
-                0x000000000801027c                MGL_SetText
+                0x0000000008010278       0x1c ./MicroGL2D/microgl2d.o
+                0x0000000008010278                MGL_SetText
  .text.MGL_RenderObjects
-                0x0000000008010298      0x69c ./MicroGL2D/microgl2d.o
-                0x0000000008010298                MGL_RenderObjects
+                0x0000000008010294      0x69c ./MicroGL2D/microgl2d.o
+                0x0000000008010294                MGL_RenderObjects
  .text.MGL_ObjectMove
-                0x0000000008010934       0x74 ./MicroGL2D/microgl2d.o
-                0x0000000008010934                MGL_ObjectMove
+                0x0000000008010930       0x74 ./MicroGL2D/microgl2d.o
+                0x0000000008010930                MGL_ObjectMove
  .text.MGL_ObjectListMove
-                0x00000000080109a8       0x84 ./MicroGL2D/microgl2d.o
-                0x00000000080109a8                MGL_ObjectListMove
+                0x00000000080109a4       0x84 ./MicroGL2D/microgl2d.o
+                0x00000000080109a4                MGL_ObjectListMove
  .text.MGL_ObjectListTransparency
-                0x0000000008010a2c        0xc ./MicroGL2D/microgl2d.o
-                0x0000000008010a2c                MGL_ObjectListTransparency
+                0x0000000008010a28        0xc ./MicroGL2D/microgl2d.o
+                0x0000000008010a28                MGL_ObjectListTransparency
  .text.my_strcpy_fixed_sym
-                0x0000000008010a38       0x20 ./MyString/mystring.o
-                0x0000000008010a38                my_strcpy_fixed_sym
+                0x0000000008010a34       0x20 ./MyString/mystring.o
+                0x0000000008010a34                my_strcpy_fixed_sym
  .text.my_strcat_fixed_sym
-                0x0000000008010a58       0x5c ./MyString/mystring.o
-                0x0000000008010a58                my_strcat_fixed_sym
+                0x0000000008010a54       0x5c ./MyString/mystring.o
+                0x0000000008010a54                my_strcat_fixed_sym
  .text.my_strcat
-                0x0000000008010ab4       0x48 ./MyString/mystring.o
-                0x0000000008010ab4                my_strcat
+                0x0000000008010ab0       0x48 ./MyString/mystring.o
+                0x0000000008010ab0                my_strcat
  .text.my_strcpy
-                0x0000000008010afc       0x18 ./MyString/mystring.o
-                0x0000000008010afc                my_strcpy
+                0x0000000008010af8       0x18 ./MyString/mystring.o
+                0x0000000008010af8                my_strcpy
  .text.my_strcpy_mem
-                0x0000000008010b14       0x4c ./MyString/mystring.o
-                0x0000000008010b14                my_strcpy_mem
+                0x0000000008010b10       0x4c ./MyString/mystring.o
+                0x0000000008010b10                my_strcpy_mem
  .text.my_strlen
-                0x0000000008010b60       0x1c ./MyString/mystring.o
-                0x0000000008010b60                my_strlen
+                0x0000000008010b5c       0x1c ./MyString/mystring.o
+                0x0000000008010b5c                my_strlen
  .text.my_strsplice
-                0x0000000008010b7c      0x130 ./MyString/mystring.o
-                0x0000000008010b7c                my_strsplice
+                0x0000000008010b78      0x130 ./MyString/mystring.o
+                0x0000000008010b78                my_strsplice
  .text.Init_DAC
-                0x0000000008010cac      0x214 ./PCM5102/pcm5102.o
-                0x0000000008010cac                Init_DAC
+                0x0000000008010ca8      0x214 ./PCM5102/pcm5102.o
+                0x0000000008010ca8                Init_DAC
  .text.Start_DAC
-                0x0000000008010ec0       0xb8 ./PCM5102/pcm5102.o
-                0x0000000008010ec0                Start_DAC
+                0x0000000008010ebc       0xb8 ./PCM5102/pcm5102.o
+                0x0000000008010ebc                Start_DAC
  .text.Stop_DAC
-                0x0000000008010f78       0x74 ./PCM5102/pcm5102.o
-                0x0000000008010f78                Stop_DAC
+                0x0000000008010f74       0x74 ./PCM5102/pcm5102.o
+                0x0000000008010f74                Stop_DAC
  .text.Setup_DAC
-                0x0000000008010fec      0x11c ./PCM5102/pcm5102.o
-                0x0000000008010fec                Setup_DAC
- .text.calloc   0x0000000008011108       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-calloc.o)
-                0x0000000008011108                calloc
+                0x0000000008010fe8      0x11c ./PCM5102/pcm5102.o
+                0x0000000008010fe8                Setup_DAC
+ .text.calloc   0x0000000008011104       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-calloc.o)
+                0x0000000008011104                calloc
  .text._calloc_r
-                0x0000000008011118       0x2c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-callocr.o)
-                0x0000000008011118                _calloc_r
- .text.malloc   0x0000000008011144       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
-                0x0000000008011144                malloc
- .text.free     0x0000000008011154       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
-                0x0000000008011154                free
+                0x0000000008011114       0x2c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-callocr.o)
+                0x0000000008011114                _calloc_r
+ .text.malloc   0x0000000008011140       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+                0x0000000008011140                malloc
+ .text.free     0x0000000008011150       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-malloc.o)
+                0x0000000008011150                free
  .text.sbrk_aligned
-                0x0000000008011164       0x40 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x0000000008011160       0x40 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x00000000080111a4      0x100 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
-                0x00000000080111a4                _malloc_r
+                0x00000000080111a0      0x100 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o)
+                0x00000000080111a0                _malloc_r
  .text.__malloc_lock
-                0x00000000080112a4        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x00000000080112a4                __malloc_lock
+                0x00000000080112a0        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x00000000080112a0                __malloc_lock
  .text.__malloc_unlock
-                0x00000000080112b0        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
-                0x00000000080112b0                __malloc_unlock
- .text.realloc  0x00000000080112bc       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-realloc.o)
-                0x00000000080112bc                realloc
+                0x00000000080112ac        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mlock.o)
+                0x00000000080112ac                __malloc_unlock
+ .text.realloc  0x00000000080112b8       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-realloc.o)
+                0x00000000080112b8                realloc
  .text._realloc_r
-                0x00000000080112cc       0x5e F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
-                0x00000000080112cc                _realloc_r
- *fill*         0x000000000801132a        0x2 
- .text.__utoa   0x000000000801132c       0x84 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
-                0x000000000801132c                __utoa
- .text.utoa     0x00000000080113b0        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
-                0x00000000080113b0                utoa
- .text.memmove  0x00000000080113b4       0x34 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
-                0x00000000080113b4                memmove
- .text.memset   0x00000000080113e8       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
-                0x00000000080113e8                memset
- .text.strstr   0x00000000080113f8       0x2c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strstr.o)
-                0x00000000080113f8                strstr
- .text._sbrk_r  0x0000000008011424       0x20 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
-                0x0000000008011424                _sbrk_r
- .text.__errno  0x0000000008011444        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
-                0x0000000008011444                __errno
+                0x00000000080112c8       0x5e F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-reallocr.o)
+                0x00000000080112c8                _realloc_r
+ *fill*         0x0000000008011326        0x2 
+ .text.__utoa   0x0000000008011328       0x84 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
+                0x0000000008011328                __utoa
+ .text.utoa     0x00000000080113ac        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
+                0x00000000080113ac                utoa
+ .text.memmove  0x00000000080113b0       0x34 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memmove.o)
+                0x00000000080113b0                memmove
+ .text.memset   0x00000000080113e4       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memset.o)
+                0x00000000080113e4                memset
+ .text.strstr   0x00000000080113f4       0x2c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-strstr.o)
+                0x00000000080113f4                strstr
+ .text._sbrk_r  0x0000000008011420       0x20 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+                0x0000000008011420                _sbrk_r
+ .text.__errno  0x0000000008011440        0xc F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-errno.o)
+                0x0000000008011440                __errno
  .text.__libc_init_array
-                0x0000000008011450       0x48 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
-                0x0000000008011450                __libc_init_array
+                0x000000000801144c       0x48 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
+                0x000000000801144c                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x0000000008011498        0x2 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x0000000008011498                __retarget_lock_acquire_recursive
+                0x0000000008011494        0x2 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x0000000008011494                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000801149a        0x2 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x000000000801149a                __retarget_lock_release_recursive
- .text.memcpy   0x000000000801149c       0x1c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
-                0x000000000801149c                memcpy
- .text._free_r  0x00000000080114b8       0x98 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
-                0x00000000080114b8                _free_r
+                0x0000000008011496        0x2 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x0000000008011496                __retarget_lock_release_recursive
+ .text.memcpy   0x0000000008011498       0x1c F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-memcpy-stub.o)
+                0x0000000008011498                memcpy
+ .text._free_r  0x00000000080114b4       0x98 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-freer.o)
+                0x00000000080114b4                _free_r
  .text._malloc_usable_size_r
-                0x0000000008011550       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
-                0x0000000008011550                _malloc_usable_size_r
+                0x000000000801154c       0x10 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-msizer.o)
+                0x000000000801154c                _malloc_usable_size_r
  *(.glue_7)
- .glue_7        0x0000000008011560        0x0 linker stubs
+ .glue_7        0x000000000801155c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008011560        0x0 linker stubs
+ .glue_7t       0x000000000801155c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008011560        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x000000000801155c        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0000000008011560        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0000000008011560                _init
- .init          0x0000000008011564        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x000000000801155c        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x000000000801155c                _init
+ .init          0x0000000008011560        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x000000000801156c        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x000000000801156c                _fini
- .fini          0x0000000008011570        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0000000008011578                . = ALIGN (0x4)
-                0x0000000008011578                _etext = .
+ .fini          0x0000000008011568        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000008011568                _fini
+ .fini          0x000000000801156c        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0000000008011574                . = ALIGN (0x4)
+                0x0000000008011574                _etext = .
 
-.vfp11_veneer   0x0000000008011578        0x0
- .vfp11_veneer  0x0000000008011578        0x0 linker stubs
+.vfp11_veneer   0x0000000008011574        0x0
+ .vfp11_veneer  0x0000000008011574        0x0 linker stubs
 
-.v4_bx          0x0000000008011578        0x0
- .v4_bx         0x0000000008011578        0x0 linker stubs
+.v4_bx          0x0000000008011574        0x0
+ .v4_bx         0x0000000008011574        0x0 linker stubs
 
-.iplt           0x0000000008011578        0x0
- .iplt          0x0000000008011578        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0000000008011574        0x0
+ .iplt          0x0000000008011574        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0000000008011578     0x7ef0
-                0x0000000008011578                . = ALIGN (0x4)
+.rodata         0x0000000008011574     0x7ef0
+                0x0000000008011574                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008011578       0x66 ./AVI/avi.o
- *fill*         0x00000000080115de        0x2 
- .rodata        0x00000000080115e0       0x26 ./AVI/mp3_callback.o
- *fill*         0x0000000008011606        0x2 
- .rodata        0x0000000008011608       0x38 ./Core/Src/main.o
- .rodata        0x0000000008011640       0xa8 ./PCM5102/pcm5102.o
+ .rodata        0x0000000008011574       0x66 ./AVI/avi.o
+ *fill*         0x00000000080115da        0x2 
+ .rodata        0x00000000080115dc       0x26 ./AVI/mp3_callback.o
+ *fill*         0x0000000008011602        0x2 
+ .rodata        0x0000000008011604       0x38 ./Core/Src/main.o
+ .rodata        0x000000000801163c       0xa8 ./PCM5102/pcm5102.o
  *(.rodata*)
  .rodata.PlayAVI.str1.4
-                0x00000000080116e8       0x4a ./AVI/avi.o
- *fill*         0x0000000008011732        0x2 
+                0x00000000080116e4       0x4a ./AVI/avi.o
+ *fill*         0x000000000801172e        0x2 
  .rodata.AVIIntro.str1.4
-                0x0000000008011734       0x23 ./AVI/avi.o
- *fill*         0x0000000008011757        0x1 
+                0x0000000008011730       0x23 ./AVI/avi.o
+ *fill*         0x0000000008011753        0x1 
  .rodata.fon_data
-                0x0000000008011758      0xb60 ./AVI/jpeg_data.o
-                0x0000000008011758                fon_data
+                0x0000000008011754      0xb60 ./AVI/jpeg_data.o
+                0x0000000008011754                fon_data
  .rodata.fon_file
-                0x00000000080122b8        0x8 ./AVI/jpeg_data.o
-                0x00000000080122b8                fon_file
+                0x00000000080122b4        0x8 ./AVI/jpeg_data.o
+                0x00000000080122b4                fon_file
  .rodata.image_avatar
-                0x00000000080122c0       0x10 ./AVI/textures.o
-                0x00000000080122c0                image_avatar
+                0x00000000080122bc       0x10 ./AVI/textures.o
+                0x00000000080122bc                image_avatar
  .rodata.image_data_avatar
-                0x00000000080122d0      0xc80 ./AVI/textures.o
-                0x00000000080122d0                image_data_avatar
+                0x00000000080122cc      0xc80 ./AVI/textures.o
+                0x00000000080122cc                image_data_avatar
  .rodata.image_data_volume
-                0x0000000008012f50      0x800 ./AVI/textures.o
-                0x0000000008012f50                image_data_volume
+                0x0000000008012f4c      0x800 ./AVI/textures.o
+                0x0000000008012f4c                image_data_volume
  .rodata.image_data_x
-                0x0000000008013750      0x800 ./AVI/textures.o
-                0x0000000008013750                image_data_x
+                0x000000000801374c      0x800 ./AVI/textures.o
+                0x000000000801374c                image_data_x
  .rodata.image_volume
-                0x0000000008013f50       0x10 ./AVI/textures.o
-                0x0000000008013f50                image_volume
+                0x0000000008013f4c       0x10 ./AVI/textures.o
+                0x0000000008013f4c                image_volume
  .rodata.image_x
-                0x0000000008013f60       0x10 ./AVI/textures.o
-                0x0000000008013f60                image_x
+                0x0000000008013f5c       0x10 ./AVI/textures.o
+                0x0000000008013f5c                image_x
  .rodata.main.str1.4
-                0x0000000008013f70       0x13 ./Core/Src/main.o
- *fill*         0x0000000008013f83        0x1 
+                0x0000000008013f6c       0x13 ./Core/Src/main.o
+ *fill*         0x0000000008013f7f        0x1 
  .rodata.STREAM_OFFSET_TAB
-                0x0000000008013f84        0x8 ./Display/display.o
+                0x0000000008013f80        0x8 ./Display/display.o
  .rodata.Font8x13
-                0x0000000008013f8c      0xb60 ./Display/fonts.o
+                0x0000000008013f88      0xb60 ./Display/fonts.o
  .rodata.CSWTCH.2
-                0x0000000008014aec        0x4 ./Display/ili9341.o
+                0x0000000008014ae8        0x4 ./Display/ili9341.o
  .rodata.ENCODER_inc_tbl
-                0x0000000008014af0       0x10 ./Encoder/encoder.o
+                0x0000000008014aec       0x10 ./Encoder/encoder.o
  .rodata.check_fs.str1.4
-                0x0000000008014b00        0x9 ./FATFS/ff.o
- *fill*         0x0000000008014b09        0x3 
+                0x0000000008014afc        0x9 ./FATFS/ff.o
+ *fill*         0x0000000008014b05        0x3 
  .rodata.follow_path.str1.4
-                0x0000000008014b0c       0x13 ./FATFS/ff.o
- *fill*         0x0000000008014b1f        0x1 
- .rodata.ExCvt  0x0000000008014b20       0x80 ./FATFS/ff.o
+                0x0000000008014b08       0x13 ./FATFS/ff.o
+ *fill*         0x0000000008014b1b        0x1 
+ .rodata.ExCvt  0x0000000008014b1c       0x80 ./FATFS/ff.o
  .rodata.LfnOfs
-                0x0000000008014ba0        0xd ./FATFS/ff.o
- *fill*         0x0000000008014bad        0x3 
+                0x0000000008014b9c        0xd ./FATFS/ff.o
+ *fill*         0x0000000008014ba9        0x3 
  .rodata.cvt1.1
-                0x0000000008014bb0      0x1f2 ./FATFS/ffunicode.o
- *fill*         0x0000000008014da2        0x2 
+                0x0000000008014bac      0x1f2 ./FATFS/ffunicode.o
+ *fill*         0x0000000008014d9e        0x2 
  .rodata.cvt2.0
-                0x0000000008014da4       0xbc ./FATFS/ffunicode.o
- .rodata.uc866  0x0000000008014e60      0x100 ./FATFS/ffunicode.o
+                0x0000000008014da0       0xbc ./FATFS/ffunicode.o
+ .rodata.uc866  0x0000000008014e5c      0x100 ./FATFS/ffunicode.o
  .rodata.FileManagerShow.str1.4
-                0x0000000008014f60        0x6 ./FileManager/filemanager.o
+                0x0000000008014f5c        0x6 ./FileManager/filemanager.o
                                           0xa (size before relaxing)
  .rodata.FileManagerNew.str1.4
-                0x0000000008014f66        0x6 ./FileManager/filemanager.o
+                0x0000000008014f62        0x6 ./FileManager/filemanager.o
                                           0x1 (size before relaxing)
- *fill*         0x0000000008014f66        0x2 
+ *fill*         0x0000000008014f62        0x2 
  .rodata.FM_audio_types
-                0x0000000008014f68       0xa2 ./FileManager/filemanager.o
-                0x0000000008014f68                FM_audio_types
- *fill*         0x000000000801500a        0x2 
+                0x0000000008014f64       0xa2 ./FileManager/filemanager.o
+                0x0000000008014f64                FM_audio_types
+ *fill*         0x0000000008015006        0x2 
  .rodata.FM_data_types
-                0x000000000801500c       0xba ./FileManager/filemanager.o
-                0x000000000801500c                FM_data_types
- *fill*         0x00000000080150c6        0x2 
+                0x0000000008015008       0xba ./FileManager/filemanager.o
+                0x0000000008015008                FM_data_types
+ *fill*         0x00000000080150c2        0x2 
  .rodata.FM_picture_types
-                0x00000000080150c8       0xac ./FileManager/filemanager.o
-                0x00000000080150c8                FM_picture_types
+                0x00000000080150c4       0xac ./FileManager/filemanager.o
+                0x00000000080150c4                FM_picture_types
  .rodata.FM_video_types
-                0x0000000008015174       0x78 ./FileManager/filemanager.o
-                0x0000000008015174                FM_video_types
+                0x0000000008015170       0x78 ./FileManager/filemanager.o
+                0x0000000008015170                FM_video_types
  .rodata.Icon_Audio
-                0x00000000080151ec        0x8 ./FileManager/icons.o
-                0x00000000080151ec                Icon_Audio
+                0x00000000080151e8        0x8 ./FileManager/icons.o
+                0x00000000080151e8                Icon_Audio
  .rodata.Icon_Catalog
-                0x00000000080151f4        0x8 ./FileManager/icons.o
-                0x00000000080151f4                Icon_Catalog
+                0x00000000080151f0        0x8 ./FileManager/icons.o
+                0x00000000080151f0                Icon_Catalog
  .rodata.Icon_Other
-                0x00000000080151fc        0x8 ./FileManager/icons.o
-                0x00000000080151fc                Icon_Other
+                0x00000000080151f8        0x8 ./FileManager/icons.o
+                0x00000000080151f8                Icon_Other
  .rodata.Icon_Picture
-                0x0000000008015204        0x8 ./FileManager/icons.o
-                0x0000000008015204                Icon_Picture
+                0x0000000008015200        0x8 ./FileManager/icons.o
+                0x0000000008015200                Icon_Picture
  .rodata.Icon_Prev
-                0x000000000801520c        0x8 ./FileManager/icons.o
-                0x000000000801520c                Icon_Prev
+                0x0000000008015208        0x8 ./FileManager/icons.o
+                0x0000000008015208                Icon_Prev
  .rodata.Icon_Text
-                0x0000000008015214        0x8 ./FileManager/icons.o
-                0x0000000008015214                Icon_Text
+                0x0000000008015210        0x8 ./FileManager/icons.o
+                0x0000000008015210                Icon_Text
  .rodata.Icon_Video
-                0x000000000801521c        0x8 ./FileManager/icons.o
-                0x000000000801521c                Icon_Video
+                0x0000000008015218        0x8 ./FileManager/icons.o
+                0x0000000008015218                Icon_Video
  .rodata.image_data_audio
-                0x0000000008015224      0x1e0 ./FileManager/icons.o
-                0x0000000008015224                image_data_audio
+                0x0000000008015220      0x1e0 ./FileManager/icons.o
+                0x0000000008015220                image_data_audio
  .rodata.image_data_catalog
-                0x0000000008015404      0x1e0 ./FileManager/icons.o
-                0x0000000008015404                image_data_catalog
+                0x0000000008015400      0x1e0 ./FileManager/icons.o
+                0x0000000008015400                image_data_catalog
  .rodata.image_data_other
-                0x00000000080155e4      0x1e0 ./FileManager/icons.o
-                0x00000000080155e4                image_data_other
+                0x00000000080155e0      0x1e0 ./FileManager/icons.o
+                0x00000000080155e0                image_data_other
  .rodata.image_data_picture
-                0x00000000080157c4      0x1e0 ./FileManager/icons.o
-                0x00000000080157c4                image_data_picture
+                0x00000000080157c0      0x1e0 ./FileManager/icons.o
+                0x00000000080157c0                image_data_picture
  .rodata.image_data_prev
-                0x00000000080159a4      0x1e0 ./FileManager/icons.o
-                0x00000000080159a4                image_data_prev
+                0x00000000080159a0      0x1e0 ./FileManager/icons.o
+                0x00000000080159a0                image_data_prev
  .rodata.image_data_text
-                0x0000000008015b84      0x1e0 ./FileManager/icons.o
-                0x0000000008015b84                image_data_text
+                0x0000000008015b80      0x1e0 ./FileManager/icons.o
+                0x0000000008015b80                image_data_text
  .rodata.image_data_video
-                0x0000000008015d64      0x1e0 ./FileManager/icons.o
-                0x0000000008015d64                image_data_video
- .rodata.Ipsf   0x0000000008015f44       0x80 ./JPEG/tjpgd.o
- .rodata.Zig    0x0000000008015fc4       0x40 ./JPEG/tjpgd.o
+                0x0000000008015d60      0x1e0 ./FileManager/icons.o
+                0x0000000008015d60                image_data_video
+ .rodata.Ipsf   0x0000000008015f40       0x80 ./JPEG/tjpgd.o
+ .rodata.Zig    0x0000000008015fc0       0x40 ./JPEG/tjpgd.o
  .rodata.dcttab
-                0x0000000008016004       0xc0 ./MP3Helix/src/dct32.o
- .rodata.pow14  0x00000000080160c4       0x10 ./MP3Helix/src/dqchan.o
+                0x0000000008016000       0xc0 ./MP3Helix/src/dct32.o
+ .rodata.pow14  0x00000000080160c0       0x10 ./MP3Helix/src/dqchan.o
  .rodata.pow2exp
-                0x00000000080160d4       0x20 ./MP3Helix/src/dqchan.o
+                0x00000000080160d0       0x20 ./MP3Helix/src/dqchan.o
  .rodata.pow2frac
-                0x00000000080160f4       0x20 ./MP3Helix/src/dqchan.o
- .rodata.pow43  0x0000000008016114       0xc0 ./MP3Helix/src/dqchan.o
+                0x00000000080160f0       0x20 ./MP3Helix/src/dqchan.o
+ .rodata.pow43  0x0000000008016110       0xc0 ./MP3Helix/src/dqchan.o
  .rodata.pow43_14
-                0x00000000080161d4      0x100 ./MP3Helix/src/dqchan.o
+                0x00000000080161d0      0x100 ./MP3Helix/src/dqchan.o
  .rodata.preTab
-                0x00000000080162d4       0x16 ./MP3Helix/src/dqchan.o
- *fill*         0x00000000080162ea        0x2 
+                0x00000000080162d0       0x16 ./MP3Helix/src/dqchan.o
+ *fill*         0x00000000080162e6        0x2 
  .rodata.xmp3_huffTabLookup
-                0x00000000080162ec      0x100 ./MP3Helix/src/hufftabs.o
-                0x00000000080162ec                xmp3_huffTabLookup
+                0x00000000080162e8      0x100 ./MP3Helix/src/hufftabs.o
+                0x00000000080162e8                xmp3_huffTabLookup
  .rodata.xmp3_huffTabOffset
-                0x00000000080163ec       0x80 ./MP3Helix/src/hufftabs.o
-                0x00000000080163ec                xmp3_huffTabOffset
+                0x00000000080163e8       0x80 ./MP3Helix/src/hufftabs.o
+                0x00000000080163e8                xmp3_huffTabOffset
  .rodata.xmp3_huffTable
-                0x000000000801646c     0x2124 ./MP3Helix/src/hufftabs.o
-                0x000000000801646c                xmp3_huffTable
+                0x0000000008016468     0x2124 ./MP3Helix/src/hufftabs.o
+                0x0000000008016468                xmp3_huffTable
  .rodata.xmp3_quadTabMaxBits
-                0x0000000008018590        0x8 ./MP3Helix/src/hufftabs.o
-                0x0000000008018590                xmp3_quadTabMaxBits
+                0x000000000801858c        0x8 ./MP3Helix/src/hufftabs.o
+                0x000000000801858c                xmp3_quadTabMaxBits
  .rodata.xmp3_quadTabOffset
-                0x0000000008018598        0x8 ./MP3Helix/src/hufftabs.o
-                0x0000000008018598                xmp3_quadTabOffset
+                0x0000000008018594        0x8 ./MP3Helix/src/hufftabs.o
+                0x0000000008018594                xmp3_quadTabOffset
  .rodata.xmp3_quadTable
-                0x00000000080185a0       0x50 ./MP3Helix/src/hufftabs.o
-                0x00000000080185a0                xmp3_quadTable
- .rodata.c18    0x00000000080185f0       0x24 ./MP3Helix/src/imdct.o
+                0x000000000801859c       0x50 ./MP3Helix/src/hufftabs.o
+                0x000000000801859c                xmp3_quadTable
+ .rodata.c18    0x00000000080185ec       0x24 ./MP3Helix/src/imdct.o
  .rodata.fastWin36
-                0x0000000008018614       0x48 ./MP3Helix/src/imdct.o
+                0x0000000008018610       0x48 ./MP3Helix/src/imdct.o
  .rodata.xmp3_bitrateTab
-                0x000000000801865c      0x10e ./MP3Helix/src/mp3tabs.o
-                0x000000000801865c                xmp3_bitrateTab
- *fill*         0x000000000801876a        0x2 
+                0x0000000008018658      0x10e ./MP3Helix/src/mp3tabs.o
+                0x0000000008018658                xmp3_bitrateTab
+ *fill*         0x0000000008018766        0x2 
  .rodata.xmp3_samplerateTab
-                0x000000000801876c       0x24 ./MP3Helix/src/mp3tabs.o
-                0x000000000801876c                xmp3_samplerateTab
+                0x0000000008018768       0x24 ./MP3Helix/src/mp3tabs.o
+                0x0000000008018768                xmp3_samplerateTab
  .rodata.xmp3_samplesPerFrameTab
-                0x0000000008018790       0x12 ./MP3Helix/src/mp3tabs.o
-                0x0000000008018790                xmp3_samplesPerFrameTab
- *fill*         0x00000000080187a2        0x2 
+                0x000000000801878c       0x12 ./MP3Helix/src/mp3tabs.o
+                0x000000000801878c                xmp3_samplesPerFrameTab
+ *fill*         0x000000000801879e        0x2 
  .rodata.xmp3_sfBandTable
-                0x00000000080187a4      0x29a ./MP3Helix/src/mp3tabs.o
-                0x00000000080187a4                xmp3_sfBandTable
- *fill*         0x0000000008018a3e        0x2 
+                0x00000000080187a0      0x29a ./MP3Helix/src/mp3tabs.o
+                0x00000000080187a0                xmp3_sfBandTable
+ *fill*         0x0000000008018a3a        0x2 
  .rodata.xmp3_sideBytesTab
-                0x0000000008018a40        0xc ./MP3Helix/src/mp3tabs.o
-                0x0000000008018a40                xmp3_sideBytesTab
+                0x0000000008018a3c        0xc ./MP3Helix/src/mp3tabs.o
+                0x0000000008018a3c                xmp3_sideBytesTab
  .rodata.xmp3_slotTab
-                0x0000000008018a4c      0x10e ./MP3Helix/src/mp3tabs.o
-                0x0000000008018a4c                xmp3_slotTab
- *fill*         0x0000000008018b5a        0x2 
+                0x0000000008018a48      0x10e ./MP3Helix/src/mp3tabs.o
+                0x0000000008018a48                xmp3_slotTab
+ *fill*         0x0000000008018b56        0x2 
  .rodata.SFLenTab
-                0x0000000008018b5c       0x20 ./MP3Helix/src/scalfact.o
+                0x0000000008018b58       0x20 ./MP3Helix/src/scalfact.o
  .rodata.xmp3_ISFIIP
-                0x0000000008018b7c       0x10 ./MP3Helix/src/trigtabs.o
-                0x0000000008018b7c                xmp3_ISFIIP
+                0x0000000008018b78       0x10 ./MP3Helix/src/trigtabs.o
+                0x0000000008018b78                xmp3_ISFIIP
  .rodata.xmp3_ISFMpeg1
-                0x0000000008018b8c       0x38 ./MP3Helix/src/trigtabs.o
-                0x0000000008018b8c                xmp3_ISFMpeg1
+                0x0000000008018b88       0x38 ./MP3Helix/src/trigtabs.o
+                0x0000000008018b88                xmp3_ISFMpeg1
  .rodata.xmp3_ISFMpeg2
-                0x0000000008018bc4      0x100 ./MP3Helix/src/trigtabs.o
-                0x0000000008018bc4                xmp3_ISFMpeg2
+                0x0000000008018bc0      0x100 ./MP3Helix/src/trigtabs.o
+                0x0000000008018bc0                xmp3_ISFMpeg2
  .rodata.xmp3_csa
-                0x0000000008018cc4       0x40 ./MP3Helix/src/trigtabs.o
-                0x0000000008018cc4                xmp3_csa
+                0x0000000008018cc0       0x40 ./MP3Helix/src/trigtabs.o
+                0x0000000008018cc0                xmp3_csa
  .rodata.xmp3_imdctWin
-                0x0000000008018d04      0x240 ./MP3Helix/src/trigtabs.o
-                0x0000000008018d04                xmp3_imdctWin
+                0x0000000008018d00      0x240 ./MP3Helix/src/trigtabs.o
+                0x0000000008018d00                xmp3_imdctWin
  .rodata.xmp3_polyCoef
-                0x0000000008018f44      0x420 ./MP3Helix/src/trigtabs.o
-                0x0000000008018f44                xmp3_polyCoef
+                0x0000000008018f40      0x420 ./MP3Helix/src/trigtabs.o
+                0x0000000008018f40                xmp3_polyCoef
  .rodata.CSWTCH.32
-                0x0000000008019364        0x5 ./MicroGL2D/microgl2d.o
- *fill*         0x0000000008019369        0x3 
+                0x0000000008019360        0x5 ./MicroGL2D/microgl2d.o
+ *fill*         0x0000000008019365        0x3 
  .rodata.CSWTCH.33
-                0x000000000801936c       0x14 ./MicroGL2D/microgl2d.o
+                0x0000000008019368       0x14 ./MicroGL2D/microgl2d.o
  .rodata.sin_tbl_int
-                0x0000000008019380       0xb6 ./MicroGL2D/microgl2d.o
-                0x0000000008019380                sin_tbl_int
- *fill*         0x0000000008019436        0x2 
+                0x000000000801937c       0xb6 ./MicroGL2D/microgl2d.o
+                0x000000000801937c                sin_tbl_int
+ *fill*         0x0000000008019432        0x2 
  .rodata.STREAM_OFFSET_TAB
-                0x0000000008019438        0x8 ./PCM5102/pcm5102.o
+                0x0000000008019434        0x8 ./PCM5102/pcm5102.o
  .rodata.__utoa.str1.1
-                0x0000000008019440       0x25 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
-                0x0000000008019468                . = ALIGN (0x4)
- *fill*         0x0000000008019465        0x3 
+                0x000000000801943c       0x25 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-utoa.o)
+                0x0000000008019464                . = ALIGN (0x4)
+ *fill*         0x0000000008019461        0x3 
 
-.ARM.extab      0x0000000008019468        0x0
-                0x0000000008019468                . = ALIGN (0x4)
+.ARM.extab      0x0000000008019464        0x0
+                0x0000000008019464                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008019468                . = ALIGN (0x4)
+                0x0000000008019464                . = ALIGN (0x4)
 
-.ARM            0x0000000008019468        0x8
-                0x0000000008019468                . = ALIGN (0x4)
-                0x0000000008019468                __exidx_start = .
+.ARM            0x0000000008019464        0x8
+                0x0000000008019464                . = ALIGN (0x4)
+                0x0000000008019464                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008019468        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x0000000008019470                __exidx_end = .
-                0x0000000008019470                . = ALIGN (0x4)
+ .ARM.exidx     0x0000000008019464        0x8 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x000000000801946c                __exidx_end = .
+                0x000000000801946c                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008019470        0x0
- .rel.iplt      0x0000000008019470        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x000000000801946c        0x0
+ .rel.iplt      0x000000000801946c        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x0000000008019470        0x0
-                0x0000000008019470                . = ALIGN (0x4)
-                0x0000000008019470                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000801946c        0x0
+                0x000000000801946c                . = ALIGN (0x4)
+                0x000000000801946c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008019470                PROVIDE (__preinit_array_end = .)
-                0x0000000008019470                . = ALIGN (0x4)
+                0x000000000801946c                PROVIDE (__preinit_array_end = .)
+                0x000000000801946c                . = ALIGN (0x4)
 
-.init_array     0x0000000008019470        0x4
-                0x0000000008019470                . = ALIGN (0x4)
-                0x0000000008019470                PROVIDE (__init_array_start = .)
+.init_array     0x000000000801946c        0x4
+                0x000000000801946c                . = ALIGN (0x4)
+                0x000000000801946c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008019470        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0000000008019474                PROVIDE (__init_array_end = .)
-                0x0000000008019474                . = ALIGN (0x4)
+ .init_array    0x000000000801946c        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0000000008019470                PROVIDE (__init_array_end = .)
+                0x0000000008019470                . = ALIGN (0x4)
 
-.fini_array     0x0000000008019474        0x4
-                0x0000000008019474                . = ALIGN (0x4)
+.fini_array     0x0000000008019470        0x4
+                0x0000000008019470                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008019474        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000008019470        0x4 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008019478                . = ALIGN (0x4)
-                0x0000000008019478                _sidata = LOADADDR (.data)
+                0x0000000008019474                . = ALIGN (0x4)
+                0x0000000008019474                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x11c load address 0x0000000008019478
+.data           0x0000000020000000      0x11c load address 0x0000000008019474
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -1765,11 +1765,11 @@ LOAD F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000002000011c                . = ALIGN (0x4)
                 0x000000002000011c                _edata = .
 
-.igot.plt       0x000000002000011c        0x0 load address 0x0000000008019594
+.igot.plt       0x000000002000011c        0x0 load address 0x0000000008019590
  .igot.plt      0x000000002000011c        0x0 F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x000000002000011c                . = ALIGN (0x4)
 
-.bss            0x000000002000011c     0x3518 load address 0x0000000008019594
+.bss            0x000000002000011c     0x3518 load address 0x0000000008019590
                 0x000000002000011c                _sbss = .
                 0x000000002000011c                __bss_start__ = _sbss
  *(.bss)
@@ -1833,7 +1833,7 @@ LOAD F:/ST/STM32CubeIDE_1.1.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000020003634                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020003634      0x604 load address 0x0000000008019594
+                0x0000000020003634      0x604 load address 0x0000000008019590
                 0x0000000020003638                . = ALIGN (0x8)
  *fill*         0x0000000020003634        0x4 
                 [!provide]                        PROVIDE (end = .)

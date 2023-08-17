@@ -348,7 +348,9 @@ static void PlayerCallback(void)
 			PlayerDelete(player1);							//удаляем плеер;
 			player1 = 0;									//инициализируем указатель на плеер.
 		}
-		player1->PlayTimeMks += player1->FrameTimeMks; 		//Увеличиваем счетчик длительности воспроизведения
+		else {
+			player1->PlayTimeMks += player1->FrameTimeMks; 	//Увеличиваем счетчик длительности воспроизведения
+		}
 	}
 }
 
