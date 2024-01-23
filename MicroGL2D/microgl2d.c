@@ -39,7 +39,6 @@
 #include "microgl2d.h"
 #include "mystring.h"
 #include <stdlib.h>
-#include "display.h"
 
 #define min(x1,x2)	(x1 < x2 ? x1 : x2)
 #define max(x1,x2)	(x1 > x2 ? x1 : x2)

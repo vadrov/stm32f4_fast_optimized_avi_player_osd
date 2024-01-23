@@ -3,8 +3,8 @@
 ../Display/display.c:56:13:LCD_SetDC	1
 ../Display/display.c:61:13:LCD_ResDC	1
 ../Display/display.c:85:6:LCD_HardWareReset	2
-../Display/display.c:96:6:LCD_String_Interpretator	26
-../Display/display.c:147:14:LCD_DisplayAdd	18
+../Display/display.c:96:6:LCD_String_Interpretator	19
+../Display/display.c:147:14:LCD_DisplayAdd	17
 ../Display/display.c:267:6:LCD_Delete	2
 ../Display/display.c:283:6:LCD_Init	11
 ../Display/display.c:291:16:LCD_GetBackLight	1
@@ -23,8 +23,8 @@
 ../Display/display.c:928:6:LCD_DrawFilledTriangle	35
 ../Display/display.c:979:6:LCD_DrawCircle	43
 ../Display/display.c:1015:6:LCD_DrawFilledCircle	4
-../Display/display.c:1061:6:LCD_ReadImage	24
-../Display/display.c:1189:6:LCD_WriteChar	38
+../Display/display.c:1061:6:LCD_ReadImage	17
+../Display/display.c:1189:6:LCD_WriteChar	37
 ../Display/display.c:1265:6:LCD_WriteString	5
 ../Display/display.c:1283:17:LCD_Color	2
 ../Display/display.c:1292:17:LCD_Color_24b_to_16b	2

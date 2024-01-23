@@ -361,10 +361,10 @@ void DMA1_Stream5_IRQHandler(void)
 	uint8_t shift[8] = {0, 6, 16, 22, 0, 6, 16, 22}; //Битовое смещение в регистрах
 	volatile uint32_t *isr = (stream > 3) ? &(dma->HISR) : &(dma->LISR);    //Регистр состояния прерываний
 	volatile uint32_t *ifcr = (stream > 3) ? &(dma->HIFCR) : &(dma->LIFCR); //Регистр сброса флагов прерываний
-	if ((*isr) & (0x10 << shift[stream])) { //Это прерывание по передаче половины буфера PCM в DAC
+	if ((*isr) & (DMA_LISR_HTIF0 << shift[stream])) { //Это прерывание по передаче половины буфера PCM в DAC
 		PlayerCallback();
 	}
-	if ((*isr) & (0x20 << shift[stream])) { //Это прерывание по передаче всего буфера PCM в DAC
+	if ((*isr) & (DMA_LISR_TCIF0 << shift[stream])) { //Это прерывание по передаче всего буфера PCM в DAC
 		PlayerCallback();
 	}
 	*ifcr = 0x3F << shift[stream]; //Сбрасываем флаги прерываний tx

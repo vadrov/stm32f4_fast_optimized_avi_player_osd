@@ -78,8 +78,8 @@ all:
 main-build: stm32f401ccu6_avi_player.elf secondary-outputs
 
 # Tool invocations
-stm32f401ccu6_avi_player.elf stm32f401ccu6_avi_player.map: $(OBJS) $(USER_OBJS) C:\Users\SamaraPRO\STM32Cube\Repository\stm32f401ccu6_spi_sdcard\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "stm32f401ccu6_avi_player.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\SamaraPRO\STM32Cube\Repository\stm32f401ccu6_spi_sdcard\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401ccu6_avi_player.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+stm32f401ccu6_avi_player.elf stm32f401ccu6_avi_player.map: $(OBJS) $(USER_OBJS) C:\Users\Vadim\STM32Cube\Repository\stm32f401ccu6_avi_player\STM32F401CCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "stm32f401ccu6_avi_player.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Vadim\STM32Cube\Repository\stm32f401ccu6_avi_player\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f401ccu6_avi_player.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

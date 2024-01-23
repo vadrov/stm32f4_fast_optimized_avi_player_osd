@@ -1,7 +1,7 @@
 AVI/riff_read_header.o: ../AVI/riff_read_header.c \
  ../AVI/riff_read_header.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -23,8 +23,8 @@ AVI/riff_read_header.o: ../AVI/riff_read_header.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h ../AVI/player.h
 ../AVI/riff_read_header.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:

@@ -1,6 +1,6 @@
 AVI/textures.o: ../AVI/textures.c \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MicroGL2D/microgl2d.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MicroGL2D/microgl2d.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -21,8 +21,8 @@ AVI/textures.o: ../AVI/textures.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MicroGL2D/microgl2d.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MicroGL2D/microgl2d.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:

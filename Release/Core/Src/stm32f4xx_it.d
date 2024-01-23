@@ -19,13 +19,13 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  ../Core/Inc/stm32f4xx_it.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/AVI/player.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/PCM5102/pcm5102.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Keyboard/keyboard.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Encoder/encoder.h
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/AVI/player.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/PCM5102/pcm5102.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Keyboard/keyboard.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Encoder/encoder.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -47,10 +47,10 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
 ../Core/Inc/stm32f4xx_it.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/AVI/player.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/PCM5102/pcm5102.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Keyboard/keyboard.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Encoder/encoder.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/AVI/player.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/PCM5102/pcm5102.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Keyboard/keyboard.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Encoder/encoder.h:

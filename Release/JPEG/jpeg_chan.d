@@ -1,8 +1,8 @@
 JPEG/jpeg_chan.o: ../JPEG/jpeg_chan.c \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h \
  ../JPEG/jpeg_chan.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -23,16 +23,16 @@ JPEG/jpeg_chan.o: ../JPEG/jpeg_chan.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h \
  ../JPEG/tjpgd.h ../JPEG/tjpgdcnf.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/AVI/avi.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MicroGL2D/microgl2d.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h:
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/AVI/avi.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MicroGL2D/microgl2d.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h:
 ../JPEG/jpeg_chan.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -53,10 +53,10 @@ C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:
 ../JPEG/tjpgd.h:
 ../JPEG/tjpgdcnf.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/AVI/avi.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MicroGL2D/microgl2d.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/AVI/avi.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MicroGL2D/microgl2d.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:

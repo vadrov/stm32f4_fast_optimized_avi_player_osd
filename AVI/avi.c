@@ -497,7 +497,7 @@ void AVIIntro(LCD_Handler *lcd)
 	MGL_ObjectListMove(sym_A, dx, dy);
 
 	char txt_prnm[] = "STM32 AVI Player";
-	char txt_cprt[] = "(C)2023 VadRoV";
+	char txt_cprt[] = "(C)2023 VadRov";
 	MGL_OBJ *prnm = MGL_ObjectAdd(intro, MGL_OBJ_TYPE_TEXT);
 	MGL_SetText(prnm, lcd->Width, dy - 13, txt_prnm, &Font_8x13, 0, COLOR_WHITE);
 	MGL_OBJ *cprt = MGL_ObjectAdd(intro, MGL_OBJ_TYPE_TEXT);

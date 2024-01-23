@@ -19,11 +19,8 @@ MicroGL2D/microgl2d.o: ../MicroGL2D/microgl2d.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  ../MicroGL2D/microgl2d.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MyString/mystring.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MyString/mystring.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -45,8 +42,5 @@ MicroGL2D/microgl2d.o: ../MicroGL2D/microgl2d.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
 ../MicroGL2D/microgl2d.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MyString/mystring.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/fonts.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/Display/display_config.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MyString/mystring.h:

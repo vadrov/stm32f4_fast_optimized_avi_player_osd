@@ -18,7 +18,7 @@ AVI/player.o: ../AVI/player.c ../AVI/player.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MyString/mystring.h
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MyString/mystring.h
 ../AVI/player.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
@@ -40,4 +40,4 @@ AVI/player.o: ../AVI/player.c ../AVI/player.h ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MyString/mystring.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MyString/mystring.h:

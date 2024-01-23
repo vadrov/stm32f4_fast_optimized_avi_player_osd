@@ -68,9 +68,9 @@ static const int8_t ENCODER_inc_tbl[] = {0, -1, 1, 0, 1, 0, 0, -1, -1, 0, 0, 1, 
 
 /* Инициализирует энкодер enc. */
 void EncoderInit(ENCODER_Handler *enc,
-				 GPIO_TypeDef *a_port, uint16_t a_pin,
-				 GPIO_TypeDef *b_port, uint16_t b_pin,
-				 GPIO_TypeDef *c_port, uint16_t c_pin)
+				 GPIO_TypeDef *a_port, uint32_t a_pin,
+				 GPIO_TypeDef *b_port, uint32_t b_pin,
+				 GPIO_TypeDef *c_port, uint32_t c_pin)
 {
 	memset(enc, 0, sizeof(ENCODER_Handler)); /* Инициализация памяти обработчика энкодера */
 	/* Назначение выводов портов, подключенных к выходам энкодера */

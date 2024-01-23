@@ -1,6 +1,6 @@
 AVI/mp3_callback.o: ../AVI/mp3_callback.c ../AVI/mp3_callback.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h \
  ../AVI/player.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -21,11 +21,11 @@ AVI/mp3_callback.o: ../AVI/mp3_callback.c ../AVI/mp3_callback.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MP3Helix/include/mp3dec.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MP3Helix/include/mp3dec.h \
  ../AVI/riff_read_header.h
 ../AVI/mp3_callback.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ff.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ffconf.h:
 ../AVI/player.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
@@ -47,5 +47,5 @@ C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/FATFS/ffconf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-C:/Users/SamaraPRO/STM32Cube/Repository/stm32f401ccu6_spi_sdcard/MP3Helix/include/mp3dec.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/MP3Helix/include/mp3dec.h:
 ../AVI/riff_read_header.h:
