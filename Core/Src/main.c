@@ -10,6 +10,11 @@
  *  Распространяется по типу "как есть", то есть использование осуществляется на свой страх и риск.
  *  Автор не предоставляет никаких гарантий.
  *
+ *  В файле display_config.h (папка Display) определяется разрешение применяемого дисплея (320x240 или
+ *  240x240), а также контроллер дисплея: ST7789 либо ILI9341. Ненужные строки комментируются, а остаются
+ *  только те, которые соответствуют фактически применяемому дисплейному модулю. По умолчанию проект настроен
+ *  на использование дисплейного модуля разрешением 320x240 пикселей на контроллере ILI9341.
+ *
  *  Требования к формату AVI:
  *  - поток видео mjpeg (motion jpeg), т.е. видеокадры должны быть закодированы jpeg кодеком;
  *  - поток аудио mp3, т.е. звук должен быть закодирован mp3 кодеком.
@@ -129,14 +134,38 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "display.h" 		//драйвер дисплея
-#include "ili9341.h" 		//поддержка дисплея на базе контроллера ili9341
-#include "pcm5102.h" 		//драйвер DAC PCM5102
-#include "ff.h"		 		//библиотека FatFS
-#include "avi.h"	 		//плеер AVI
-#include "filemanager.h"	//файловый менеджер
-#include "keyboard.h"		//модуль работы с кнопками
-#include "encoder.h"		//драйвер энкодера
+#include "display.h" 		/* Драйвер/библиотека дисплея */
+#include "display_config.h" /* Конфигрурация дисплея (там настройки для вашего дисплейного модуля) */
+#if defined(LCD_SIZE_240X240)
+#define DISPLAY_SIZE1		240
+#define DISPLAY_SIZE2		240
+#elif defined(LCD_SIZE_320X240)
+#define DISPLAY_SIZE1		320
+#define DISPLAY_SIZE2		240
+#endif
+#if defined(LCD_ILI9341_DRIVER)
+#include "ili9341.h" 		/* Поддержка дисплея на базе контроллера ili9341 */
+#define DISPLAY_CONTROLLER_WIDTH	ILI9341_CONTROLLER_WIDTH
+#define DISPLAY_CONTROLLER_HEIGHT	ILI9341_CONTROLLER_HEIGHT
+#define DISPLAY_Init		ILI9341_Init
+#define DISPLAY_SetWindow	ILI9341_SetWindow
+#define DISPLAY_SleepIn		ILI9341_SleepIn
+#define DISPLAY_SleepOut	ILI9341_SleepOut
+#elif defined(LCD_ST7789_DRIVER)
+#include "st7789.h" 		/* Поддержка дисплея на базе контроллера st7789 */
+#define DISPLAY_CONTROLLER_WIDTH	ST7789_CONTROLLER_WIDTH
+#define DISPLAY_CONTROLLER_HEIGHT	ST7789_CONTROLLER_HEIGHT
+#define DISPLAY_Init		ST7789_Init
+#define DISPLAY_SetWindow	ST7789_SetWindow
+#define DISPLAY_SleepIn		ST7789_SleepIn
+#define DISPLAY_SleepOut	ST7789_SleepOut
+#endif
+#include "pcm5102.h" 		/* драйвер DAC PCM5102 */
+#include "ff.h"		 		/* библиотека FatFS */
+#include "avi.h"	 		/* плеер AVI */
+#include "filemanager.h"	/* файловый менеджер */
+#include "keyboard.h"		/* модуль работы с кнопками */
+#include "encoder.h"		/* драйвер энкодера */
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -249,7 +278,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-	//�?нициализация I2S3
+	//Инициализация I2S3
     Init_DAC();
 	DWT_init();
 
@@ -271,31 +300,28 @@ int main(void)
    									   .dc_pin = LCD_DC_Pin,
    									   .cs_port = LCD_CS_GPIO_Port,
    									   .cs_pin = LCD_CS_Pin  };
-	#ifndef LCD_DYNAMIC_MEM
-	LCD_Handler lcd1;
-	#endif
-	//Для дисплея на контроллере ILI9341
-	LCD = LCD_DisplayAdd( LCD,
-	#ifndef LCD_DYNAMIC_MEM
-		  	  	  	  	  &lcd1,
-	#endif
-		  	  	  	  	  320,
-		   				  240,
-						  ILI9341_CONTROLLER_WIDTH,
-						  ILI9341_CONTROLLER_HEIGHT,
-						  //Задаем смещение по ширине и высоте для нестандартных или бракованных дисплеев:
-						  0,		//смещение по ширине дисплейной матрицы
-						  0,		//смещение по высоте дисплейной матрицы
-						  //PAGE_ORIENTATION_PORTRAIT,
-						  //PAGE_ORIENTATION_PORTRAIT_MIRROR,
-						  PAGE_ORIENTATION_LANDSCAPE,
-						  ILI9341_Init,
-						  ILI9341_SetWindow,
-						  ILI9341_SleepIn,
-						  ILI9341_SleepOut,
-						  &spi_dat,
-						  LCD_DATA_16BIT_BUS,
-						  bl_dat );
+#ifndef LCD_DYNAMIC_MEM
+LCD_Handler lcd1;
+#endif
+LCD = LCD_DisplayAdd( LCD,
+#ifndef LCD_DYNAMIC_MEM
+	  	  	  	  	  &lcd1,
+#endif
+					  DISPLAY_SIZE1,
+					  DISPLAY_SIZE2,
+					  DISPLAY_CONTROLLER_WIDTH,
+					  DISPLAY_CONTROLLER_HEIGHT,
+					  /* Задаем смещение по ширине и высоте для нестандартных или бракованных дисплеев: */
+					  0,	/* смещение по ширине дисплейной матрицы */
+					  0,	/* смещение по высоте дисплейной матрицы */
+					  PAGE_ORIENTATION_LANDSCAPE,
+					  DISPLAY_Init,
+					  DISPLAY_SetWindow,
+					  DISPLAY_SleepIn,
+					  DISPLAY_SleepOut,
+					  &spi_dat,
+					  LCD_DATA_16BIT_BUS,
+					  bl_dat );
 
 	LCD_Handler *lcd = LCD; //указатель на первый дисплей в списке
 	LCD_Init(lcd);
@@ -326,7 +352,7 @@ int main(void)
 
 	File_Manager_Handler *fm = FileManagerNew();	/* Создание обработчика файлового менеджера */
 	fm->SetDisplay(fm, lcd);						/* Дисплей, на который выводится файловый менеджер (указатель) */
-	fm->SetWin(fm, 6, 0, lcd->Width-6, lcd->Height);/* Параметры окна файлового менеджера:
+	fm->SetWin(fm, 0, 0, lcd->Width, lcd->Height);/* Параметры окна файлового менеджера:
 	  	  	  	  	  	  	  	  	  	  	  	  	   - позиция левого верхнего угла окна по горизонтали;
 	  	  	  	  	  	  	  	  	  	  	  	  	   - позиция левого верхнего угла окна по вертикали;
 	  	  	  	  	  	  	  	  	  	  	  	  	   - ширина окна;
@@ -343,8 +369,8 @@ int main(void)
 	//Будем работать с модулем Keyboard и эмулировать для него нажатие кнопок через
 	//специальную функцию, связывающую обработчик энкодера с модулем для работы с кнопками.
 	//Такую роль выполняет функция EncoderEventToKeyboard, находящаяся в файле stm32f4xx_it.c
-	KEYB_all_button = 3; //�?спользуем 3 кнопки для модуля Keyboard
-	//�?нициализируем обработчик энкодера
+	KEYB_all_button = 3; //Используем 3 кнопки для модуля Keyboard
+	//Инициализируем обработчик энкодера
 	EncoderInit(&encoder1,
 				ENCODER_A_GPIO_Port,
 				ENCODER_A_Pin,
@@ -518,7 +544,15 @@ static void MX_SPI1_Init(void)
   LL_SPI_Init(SPI1, &SPI_InitStruct);
   LL_SPI_SetStandard(SPI1, LL_SPI_PROTOCOL_MOTOROLA);
   /* USER CODE BEGIN SPI1_Init 2 */
-
+#if defined(LCD_ILI9341_DRIVER)
+  LL_GPIO_SetPinPull(LCD_SCL_GPIO_Port, LCD_SCL_Pin, LL_GPIO_PULL_NO);
+  LL_GPIO_SetPinPull(LCD_SDA_GPIO_Port, LCD_SDA_Pin, LL_GPIO_PULL_NO);
+  LL_SPI_SetClockPolarity(SPI1, LL_SPI_POLARITY_LOW);
+#elif  defined(LCD_ST7789_DRIVER)
+  LL_GPIO_SetPinPull(LCD_SCL_GPIO_Port, LCD_SCL_Pin, LL_GPIO_PULL_UP);
+  LL_GPIO_SetPinPull(LCD_SDA_GPIO_Port, LCD_SDA_Pin, LL_GPIO_PULL_UP);
+  LL_SPI_SetClockPolarity(SPI1, LL_SPI_POLARITY_HIGH);
+#endif
   /* USER CODE END SPI1_Init 2 */
 
 }

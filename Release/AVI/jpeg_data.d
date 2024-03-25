@@ -22,6 +22,7 @@ AVI/jpeg_data.o: ../AVI/jpeg_data.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/JPEG/jpeg_chan.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h:
@@ -46,4 +47,5 @@ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:

@@ -21,6 +21,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h \
+ C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/ili9341.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/PCM5102/pcm5102.h \
  C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/FATFS/ff.h \
@@ -51,6 +52,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/fonts.h:
+C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/display_config.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/Display/ili9341.h:
 C:/Users/Vadim/STM32Cube/Repository/stm32f401ccu6_avi_player/PCM5102/pcm5102.h:
