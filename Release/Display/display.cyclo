@@ -16,12 +16,12 @@
 ../Display/display.c:398:6:LCD_SleepOut	11
 ../Display/display.c:777:6:LCD_Fill	1
 ../Display/display.c:783:6:LCD_DrawPixel	5
-../Display/display.c:795:6:LCD_DrawLine	22
+../Display/display.c:795:6:LCD_DrawLine	25
 ../Display/display.c:858:6:LCD_DrawRectangle	1
 ../Display/display.c:867:6:LCD_DrawFilledRectangle	7
 ../Display/display.c:880:6:LCD_DrawTriangle	1
-../Display/display.c:928:6:LCD_DrawFilledTriangle	35
-../Display/display.c:979:6:LCD_DrawCircle	43
+../Display/display.c:928:6:LCD_DrawFilledTriangle	39
+../Display/display.c:979:6:LCD_DrawCircle	69
 ../Display/display.c:1015:6:LCD_DrawFilledCircle	4
 ../Display/display.c:1061:6:LCD_ReadImage	17
 ../Display/display.c:1189:6:LCD_WriteChar	37

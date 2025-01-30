@@ -95,18 +95,19 @@ extern uint32_t millis; //Счетчик миллисекунд. Эта пере
 //speed от 0 (FCLK/2) до 7 (FCLK/256)
 static void set_sd_interface_speed(uint8_t speed)
 {
-	if (speed > 7) speed = 7;
+	speed &= 7;
 	SPI_SD->CR1 &= ~SPI_CR1_SPE; //SPI отключено
 	SPI_SD->CR1 &= ~(0x07UL<<(3U)); //маска скорости
-	SPI_SD->CR1 |= (uint32_t)(speed<<(3U));
+	SPI_SD->CR1 |= (uint32_t)(speed << SPI_CR1_BR_Pos);
 	SPI_SD->CR1 |= SPI_CR1_SPE; // SPI включено
 }
 
 static BYTE spi_rw(BYTE wval)
 {
+	while (!(SPI_SD->SR & SPI_SR_TXE)) { ; }
 	*((volatile uint8_t *)&SPI_SD->DR) = wval;
-	while(!(SPI_SD->SR & SPI_SR_RXNE)) ;
-	while (SPI_SD->SR & SPI_SR_BSY) ;
+	while(!(SPI_SD->SR & SPI_SR_RXNE)) { ; }
+	while (SPI_SD->SR & SPI_SR_BSY) { ; }
 	return *((volatile uint8_t *)&SPI_SD->DR);
 }
 
@@ -206,13 +207,14 @@ static void spi_r_multi(BYTE *rval, uint16_t cnt)
 
 	while(txCnt > 0)
 	{
+		while (!(SPI_SD->SR & SPI_SR_TXE)) { ; }
 		*((volatile uint8_t *)&SPI_SD->DR) = 0xFF;
 		txCnt--;
-		while(!(SPI_SD->SR & SPI_SR_RXNE));
+		while(!(SPI_SD->SR & SPI_SR_RXNE)) { ; }
 		*pRxData = *((volatile uint8_t *)&SPI_SD->DR);
 		pRxData++;
 	}
-	while (SPI_SD->SR & SPI_SR_BSY) ;
+	while (SPI_SD->SR & SPI_SR_BSY) { ; }
 }
 #endif // SD_USE_DMA
 

@@ -1,9 +1,9 @@
-../FATFS/ff.c:2726:13:get_fileinfo	32
+../FATFS/ff.c:2726:13:get_fileinfo	34
 ../FATFS/ff.c:3400:13:check_fs	21
 ../FATFS/ff.c:3494:16:mount_volume.constprop	39
 ../FATFS/ff.c:1262:14:get_fat.isra	15
 ../FATFS/ff.c:1802:16:dir_sdi.constprop	24
-../FATFS/ff.c:3160:16:follow_path	94
+../FATFS/ff.c:3160:16:follow_path	93
 ../FATFS/ff.c:3766:9:f_mount	9
 ../FATFS/ff.c:3826:9:f_open	7
 ../FATFS/ff.c:4027:9:f_read	22

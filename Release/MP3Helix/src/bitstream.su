@@ -1,5 +1,5 @@
 ../MP3Helix/src/bitstream.c:60:6:xmp3_SetBitstreamPointer	0	static
-../MP3Helix/src/bitstream.c:129:14:xmp3_GetBits	16	static
+../MP3Helix/src/bitstream.c:129:14:xmp3_GetBits	24	static
 ../MP3Helix/src/bitstream.c:165:5:xmp3_CalcBitsUsed	4	static
 ../MP3Helix/src/bitstream.c:188:5:xmp3_CheckPadBit	0	static
 ../MP3Helix/src/bitstream.c:218:5:xmp3_UnpackFrameHeader	36	static

@@ -232,18 +232,8 @@ static void DWT_init (void)
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	/* включаем кэширование инструкций */
-	#if (INSTRUCTION_CACHE_ENABLE != 0U)
-	((FLASH_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x3C00UL))->ACR |= (0x1UL << (9U));
-	#endif
-	/* включаем кэширование данных */
-	#if (DATA_CACHE_ENABLE != 0U)
-	((FLASH_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x3C00UL))->ACR |= (0x1UL << (10U));
-	#endif
-	/* включаем систему предварительной выборки инструкций */
-	#if (PREFETCH_ENABLE != 0U)
-	((FLASH_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x3C00UL))->ACR |= (0x1UL << (8U));
-	#endif
+	/* включаем кэширование инструкций, кэширование данных и систему предварительной выборки инструкций */
+	FLASH->ACR |= (0x1UL << 9U) | (0x1UL << 10U) | (0x1UL << 8U);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/

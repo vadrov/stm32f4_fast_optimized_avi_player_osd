@@ -20,7 +20,7 @@
 ../Display/display.c:858:6:LCD_DrawRectangle	40	static
 ../Display/display.c:867:6:LCD_DrawFilledRectangle	8	static
 ../Display/display.c:880:6:LCD_DrawTriangle	48	static
-../Display/display.c:928:6:LCD_DrawFilledTriangle	128	static
+../Display/display.c:928:6:LCD_DrawFilledTriangle	120	static
 ../Display/display.c:979:6:LCD_DrawCircle	96	static
 ../Display/display.c:1015:6:LCD_DrawFilledCircle	72	static
 ../Display/display.c:1061:6:LCD_ReadImage	64	static

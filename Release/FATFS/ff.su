@@ -2,7 +2,7 @@
 ../FATFS/ff.c:3400:13:check_fs	16	static,ignoring_inline_asm
 ../FATFS/ff.c:3494:16:mount_volume.constprop	24	static
 ../FATFS/ff.c:1262:14:get_fat.isra	24	static
-../FATFS/ff.c:1802:16:dir_sdi.constprop	40	static
+../FATFS/ff.c:1802:16:dir_sdi.constprop	32	static
 ../FATFS/ff.c:3160:16:follow_path	80	static,ignoring_inline_asm
 ../FATFS/ff.c:3766:9:f_mount	16	static
 ../FATFS/ff.c:3826:9:f_open	80	static

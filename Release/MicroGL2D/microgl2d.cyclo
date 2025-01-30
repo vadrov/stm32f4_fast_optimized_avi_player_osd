@@ -4,14 +4,14 @@
 ../MicroGL2D/microgl2d.c:493:13:GRAPH_getcolor_A4R4G4B4	1
 ../MicroGL2D/microgl2d.c:502:13:GRAPH_getcolor_R8G8B8	1
 ../MicroGL2D/microgl2d.c:511:13:GRAPH_getcolor_A8R8G8B8	1
-../MicroGL2D/microgl2d.c:520:13:MGL_setcolorbuffer	84
+../MicroGL2D/microgl2d.c:520:13:MGL_setcolorbuffer	82
 ../MicroGL2D/microgl2d.c:110:15:MGL_GradientCreate	1
 ../MicroGL2D/microgl2d.c:120:6:MGL_GradientDelete	4
 ../MicroGL2D/microgl2d.c:133:6:MGL_GradientAddColor	7
 ../MicroGL2D/microgl2d.c:171:13:MGL_GradientSetDeg	1
 ../MicroGL2D/microgl2d.c:177:10:MGL_ObjectAdd	7
 ../MicroGL2D/microgl2d.c:214:10:MGL_ObjectDelete	5
-../MicroGL2D/microgl2d.c:236:6:MGL_ObjectsListDelete	7
+../MicroGL2D/microgl2d.c:236:6:MGL_ObjectsListDelete	9
 ../MicroGL2D/microgl2d.c:245:13:MGL_ObjectSetTexture	1
 ../MicroGL2D/microgl2d.c:251:13:MGL_ObjectSetGradient	1
 ../MicroGL2D/microgl2d.c:257:13:MGL_ObjectSetTransparency	1
@@ -21,7 +21,7 @@
 ../MicroGL2D/microgl2d.c:293:6:MGL_SetTriangle	5
 ../MicroGL2D/microgl2d.c:319:6:MGL_SetCircle	1
 ../MicroGL2D/microgl2d.c:329:6:MGL_SetText	1
-../MicroGL2D/microgl2d.c:881:6:MGL_RenderObjects	69
+../MicroGL2D/microgl2d.c:881:6:MGL_RenderObjects	72
 ../MicroGL2D/microgl2d.c:896:6:MGL_ObjectMove	5
 ../MicroGL2D/microgl2d.c:930:6:MGL_ObjectListMove	7
 ../MicroGL2D/microgl2d.c:940:6:MGL_ObjectListTransparency	3

@@ -7,7 +7,7 @@
 ../FileManager/filemanager.c:187:23:FileManagerGetStatus	1
 ../FileManager/filemanager.c:193:21:FileManagerGetFilePath	1
 ../FileManager/filemanager.c:199:21:FileManagerGetFileName	1
-../FileManager/filemanager.c:211:13:FileManagerShow	88
+../FileManager/filemanager.c:211:13:FileManagerShow	87
 ../FileManager/filemanager.c:80:6:Dos866toCp1251	6
 ../FileManager/filemanager.c:501:23:FileManagerNew	1
 ../FileManager/filemanager.c:521:6:FileManagerDelete	6
