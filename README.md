@@ -1,76 +1,75 @@
 Copyright (C)2019-2023, VadRov, all right reserved / www.youtube.com/@VadRov / www.dzen.ru/vadrov
-# STM32F4 видеоплеер для проигрывания AVI-файлов (файл с расширением avi, контейнер riff)
-Допускается свободное распространение. При любом способе распространения указание автора ОБЯЗАТЕЛЬНО. В случае внесения изменений и распространения модификаций указание первоначального автора ОБЯЗАТЕЛЬНО. Распространяется по типу "как есть", то есть использование осуществляется на свой страх и риск. Автор не предоставляет никаких гарантий.
-## Компоненты:
-- Отладочная плата (МК) STM32F401x;
-- SPI дисплей на контроллере ILI9341 или ST7789 разрешением 240x240 или 320x240;
-- модуль SD карты;
-- аудио-ЦАП PCM5102;
-- инкрементарный механический энкодер;
-- конденсатор керамический 0.01-0.1 мкФ - 2 шт.
-## Выбор контроллера дисплейного модуля и его разрешения:
-В файле display_config.h (папка Display) определяется разрешение применяемого дисплея (320x240 или 240x240), а также контроллер дисплея: ST7789 либо ILI9341. Ненужные строки конфигурации комментируются, а остаются только те, которые соответствуют фактически применяемому дисплейному модулю. По умолчанию проект настроен на использование дисплейного модуля разрешением 320x240 пикселей на контроллере ILI9341:
+# STM32F4 video player for playing AVI files (file with extension avi, container riff)
+Free distribution is permitted. In any way of distribution, the author's indication is MANDATORY. In case of changes and distribution of modifications, the indication of the original author is MANDATORY. Distributed "as is", i.e. use is at your own risk. The author does not provide any guarantees.
+## Components:
+- Development board STM32F401x;
+- SPI display on ILI9341 or ST7789 controller with a resolution of 240x240 or 320x240;
+- SD card module;
+- PCM5102 audio DAC;
+- incremental mechanical encoder;
+- ceramic capacitor 0.01-0.1 μF - 2 pcs.
+## Selecting the display module controller and its resolution:
+The display_config.h file (Display folder) defines the resolution of the display being used (320x240 or 240x240), as well as the display controller: ST7789 or ILI9341. Unnecessary configuration lines are commented out, and only those that correspond to the actual display module being used remain. By default, the project is configured to use a display module with a resolution of 320x240 pixels on the ILI9341 controller:
 ![image](https://github.com/vadrov/stm32f4_fast_optimized_avi_player_osd/assets/111627147/bc4febba-9923-42a1-be76-f511d46d08da)
-## Подключение дисплейного модуля (на базе контроллера ILI9341):
+## Connecting the display module (based on the ILI9341 controller):
 ![image](https://user-images.githubusercontent.com/111627147/233799705-78c288c1-d07f-414f-806e-08f1d835d297.png)
-## Подключение модуля sd-карты:
+## Connecting the SD card module:
 ![image](https://user-images.githubusercontent.com/111627147/233799770-7a0b10fd-66d6-4256-beb9-91e4e590242c.png)
-## Подключение модуля аудио-ЦАП PCM5102:
+## Connecting the PCM5102 audio DAC module:
 ![image](https://user-images.githubusercontent.com/111627147/233799861-5a9cf7d4-9ae6-48cb-aef2-774aa1f30381.png)
-## Подключение инкрементарного механического энкодера:
+## Connecting an incremental mechanical encoder:
 ![image](https://user-images.githubusercontent.com/111627147/233801356-1e604c75-00a0-4896-a546-d7579f2f6b5b.png)
-## Видео о проекте видеоплеера:
+## Video about the video player project:
 [![Watch the video](https://img.youtube.com/vi/sC5nm7vdN6k/maxresdefault.jpg)](https://youtu.be/sC5nm7vdN6k)
-## Требования к формату AVI:
-- поток видео mjpeg (motion jpeg), т.е. видеокадры должны быть закодированы jpeg кодеком;
-- поток аудио mp3, т.е. звук должен быть закодирован mp3 кодеком.\
-Для преобразования видеофайла к поддерживаемому плеером формату рекомендуется использовать библиотеку ffmpeg. Например, следующая командная строка преобразует mp4-видео в поддерживаемый плеером формат avi с размером кадра 320х240, частотой 25 кадров в секунду, с качеством кодирования 15:\
-      **ffmpeg -i video.mp4 -c:a mp3 -c:v mjpeg -s 320x240 -r 25 -q 15 video.avi**\
-где:
-- -i video.mp4 - указание на файл-источник, который вы хотите преобразовать в поддерживаемый плееером формат avi;
-- video.avi - выходной файл с расширением avi, в котором будет сохранен результат преобразования;
-- -c:a mp3 - указание на то, что "звуковая дорожка" (аудиопоток) в выходном файле должна быть в формате кодека mp3;
-- -c:v mjpeg - указание на то, что "видео дорожка" (видеопоток) в выходном файле должна быть в формате кодека mjpeg (набор картинок, закодированных кодеком jpeg, т.н., motion jpeg);
--	-s 320x240 - указание на размер видеокадра в выходном файле avi (ширина, высота);
-- -r 25 - указание на частоту видеокадров в выходном файле avi (кадров в секунду);
--	-q 15 - указание на качество кодирования файла avi (от 1 (наилучшее) до 31 (наихудшее)).
-Качество звука можно задать ключом -b, означающим bitrate (скорость потока в бит/с). Например, такой ключ, как,  -b:a 128k, задаст для звукового потока скорость в 128 кбит/с, что считается для кодека mp3 начальным уровнем при кодировании музыкальных данных (32-96 кбит/с достаточно для кодирования речи, а от 96 кбит/с и более - музыки низкого качества). Потока в 256 кбит/с достаточно для высокого качества музыки при кодировании mp3. 320 кбит/с - предел для кодека mp3.\
-При преобразовании видео учитывайте соотношение сторон кадра исходного видео. Например, если исходное видео имело соотношение сторон кадра 16:9, то при использовании дисплея с шириной 320 пикселей, высота выходного кадра должна быть 180 пикселей. Т.е. параметр s для приведенного примера должен быть задан в виде 320х180. Если соотношение сторон исходного кадра 4:3, то при использовании дисплея с шириной 320 пикселей высота выходного кадра должна быть 240 пикселей. Т.е. параметр s для этого примера должен быть задан в виде 320х240. Параметр q определяет качество кодирования и может принимать значения от 1 до 31. С увеличением q качество снижается, а с уменьшением - увеличивается. Этот параметр, естественно, влияет на производительность программного декодера jpeg. Золотая середина этого параметра для малопроизводительного микроконтроллера 15-20. При значении 15 для stm32f401ccu6, работающем на частоте 84 МГц, декодер jpeg для кадра размером 320х240 показывает
-производительность от 11 до 25 кадров в секунду (40 - 90 мс на декодирование одного кадра изображения), одновременно декодируя mp3 поток.\
-Плеер обеспечивает неплохую синхронизацию аудио и видеопотоков. Причем, подсчет времени воспроизведения, а, соответственно, и синхронизация аудио с видео осуществляются по прерываниям потока DMA, обслуживающего DAC. В прерывании потока DMA, обслуживающего DAC, увеличивается счетчик длительности воспроизведения, рассчитываемой по аудиокадрам, на величину длительности воспроизведения звукового кадра, определяемую по формуле:\
-      **d = 1000000 * samples / samplerate**\
-где samples - количество сэмплов в кадре, samplerate - частота дискретизации/сэмплирования(Гц), d - длительность воспроизведения звукового кадра (мкс).\
-Таким образом, при воспроизведении нет привязки к реальному времени. Ход внутреннего времени плеера	задает тактирование модуля I2S. Расхождение от реального времени определяется разницей между заданной и реальной частотой дискретизации/сэмплирования. Так, для частоты дискретизации 44100 Гц реальная	частота дискретизации составляет 44100.46875 Гц при 16-битном формате данных и 44099.50781 Гц	при 32-битном формате данных в случае использования кварцевого резонатора на 25 Мгц и встроенного модуля I2S PLL stm32f401ccu6. Т.е. в обоих случаях ошибка не превышает 0.0011% (см. таблицу 91, RM0368 REV 5).	Синхронизация аудио и видео осуществляется в пределах времени отображения одного видеокадра. Это время	определяется из соответствующего поля avi файла (dwMicroSecPerFrame, время отображения кадра в мкс).	С каждым новым видеокадром (не важно при этом пропущен он или показан) общее время воспроизведения,	рассчитываемое по видеокадрам, увеличивается на указанную величину. В свою очередь, с каждым	воспроизведенным аудиокадром увеличивается на величину d общее время воспроизведения, рассчитываемое по аудиокадрам (в прерывании потока DMA, обслуживающего DAC). По разнице между этими значениями времени	плеер принимает одно из трех решений:
-- декодировать видеокадр, если разница времени не превышает длительности отображения одного видеокадра;
-- пропустить декодирование видеокадра (переход на следующий видеокадр с инкрементом счетчика воспроизведения для видео), если время, рассчитываемое по видеокадрам, отстает от времени, рассчитанного по воспроизведенным аудиокадрам;
-- организовать задержку, равную разнице времени (после чего перейти к декодированию кадра), если время, расчитанное по видеокадрам, превышает время, рассчитанное по аудиокадрам.\
-Демонстрируемый проект использует следующие драйвера, модули, библиотеки ...:
-## Для декодирования jpeg изображений используется модифицированная и оптимизированная для stm32 библиотека TJpgDec - Tiny JPEG Decompressor R0.03 (папка JPEG)
+## Requirements for the AVI format:
+- mjpeg (motion jpeg) video stream, i.e. video frames must be encoded with a jpeg codec;
+- mp3 audio stream, i.e. sound must be encoded with an mp3 codec.\
+To convert a video file to a format supported by the player, it is recommended to use the ffmpeg library. For example, the following command line converts mp4 video to a supported avi format with a frame size of 320x240, a frequency of 25 frames per second, and an encoding quality of 15:\
+**ffmpeg -i video.mp4 -c:a mp3 -c:v mjpeg -s 320x240 -r 25 -q 15 video.avi**\
+where:
+- -i video.mp4 - specifies the source file you want to convert to the avi format supported by the player;
+- video.avi - the output file with the avi extension, in which the conversion result will be saved;
+- -c:a mp3 - specifies that the "soundtrack" (audio stream) in the output file must be in the mp3 codec format;
+- -c:v mjpeg - specifies that the "video track" (video stream) in the output file must be in the mjpeg codec format (a set of images encoded with the jpeg codec, the so-called motion jpeg);
+- -s 320x240 - specifies the video frame size in the output avi file (width, height);
+- -r 25 - specifies the video frame rate in the output avi file (frames per second);
+- -q 15 - specifies the quality of avi file encoding (from 1 (best) to 31 (worst)).
+Audio quality can be set with the -b switch, meaning bitrate (stream speed in bits/sec). For example, a switch such as -b:a 128k will set the audio stream speed to 128 kbps, which is considered the entry level for the mp3 codec when encoding music data (32-96 kbps is enough for speech encoding, and 96 kbps and more are low-quality music). A stream of 256 kbps is enough for high-quality music when encoding mp3. 320 kbps is the limit for the mp3 codec.\
+When converting video, take into account the aspect ratio of the source video. For example, if the source video had an aspect ratio of 16:9, then when using a display with a width of 320 pixels, the height of the output frame should be 180 pixels. That is, The s parameter for the given example should be set as 320x180. If the aspect ratio of the original frame is 4:3, then when using a display with a width of 320 pixels, the height of the output frame should be 240 pixels. That is, the s parameter for this example should be set as 320x240. The q parameter determines the encoding quality and can take values ​​from 1 to 31. As q increases, the quality decreases, and as q decreases, it increases. This parameter naturally affects the performance of the jpeg software decoder. The golden mean of this parameter for a low-performance microcontroller is 15-20. At a value of 15 for stm32f401ccu6, operating at a frequency of 84 MHz, the jpeg decoder for a frame of 320x240 size shows performance from 11 to 25 frames per second (40 - 90 ms for decoding one frame of the image), simultaneously decoding the mp3 stream. \
+The player provides good synchronization of audio and video streams. Moreover, the calculation of the playback time, and, accordingly, the synchronization of audio with video are carried out by interruptions of the DMA stream servicing the DAC. When interrupting the DMA stream servicing the DAC, the playback duration counter calculated by audio frames is increased by the playback duration of the audio frame, determined by the formula:
+**d = 1000000 * samples / samplerate**
+where samples is the number of samples in a frame, samplerate is the sampling/sampling frequency (Hz), d is the playback duration of the audio frame (μs).\
+Thus, there is no reference to real time during playback. The flow of the player's internal time is determined by the clocking of the I2S module. The deviation from real time is determined by the difference between the specified and real sampling/sampling frequency. Thus, for a sampling frequency of 44100 Hz, the actual sampling frequency is 44100.46875 Hz for a 16-bit data format and 44099.50781 Hz for a 32-bit data format in the case of using a 25 MHz quartz resonator and an integrated I2S PLL stm32f401ccu6 module. That is, in both cases the error does not exceed 0.0011% (see Table 91, RM0368 REV 5). Audio and video synchronization is performed within the display time of one video frame. This time is determined from the corresponding field of the avi file (dwMicroSecPerFrame, frame display time in μs). With each new video frame (it does not matter whether it is skipped or shown), the total playback time calculated by video frames increases by the specified value. In turn, with each played audio frame, the total playback time calculated by audio frames (in the interrupt of the DMA stream servicing the DAC) increases by d. Based on the difference between these time values, the player makes one of three decisions:
+- decode the video frame if the time difference does not exceed the duration of displaying one video frame;
+- skip decoding the video frame (go to the next video frame with an increment of the playback counter for the video), if the time calculated by video frames lags behind the time calculated by the played audio frames;
+- organize a delay equal to the time difference (and then go to decoding the frame), if the time calculated by video frames exceeds the time calculated by audio frames.\
+The demonstrated project uses the following drivers, modules, libraries ...:
+## For decoding jpeg images, the modified and optimized for stm32 library TJpgDec is used - Tiny JPEG Decompressor R0.03 (folder JPEG)
 Portions copyright (C) 2021, ChaN,   all right reserved.\
 Portions сopyright (C) 2022-2023, VadRov, all right reserved.
-## Для работы с SD картой используется драйвер SD карты (папка FATFS)
+## To work with the SD card, use the SD card driver (FATFS folder)
 Portions copyright (C) 2014, ChaN, all rights reserved.\
 Portions copyright (C) 2017, kiwih, all rights reserved.\
 Portions сopyright (C) 2019, VadRov, all right reserved.
-## Для работы с файловой системой используется библиотека FatFs Generic FAT Filesystem Module  R0.15 w/patch1 (папка FATFS)
+## To work with the file system, the library FatFs Generic FAT Filesystem Module R0.15 w/patch1 (FATFS folder) is used
 Copyright (C) 2022, ChaN, all right reserved.
-## Драйвер DAC на базе PCM5102 (папка PCM5102)
+## PCM5102 based DAC driver (PCM5102 folder)
 Copyright (C) 2019, VadRov, all right reserved.
-## Драйвер дисплея V1.4 с вариантом "ASM-турбо" (папка Display)
+## Display Driver V1.4 with "ASM-turbo" option (Display folder)
 Copyright (C) 2019-2023 VadRov, all right reserved.
 ## Fixed-point MP3 decoder (папка MP3Helix)
 Portions Copyright (c) 1995-2002 RealNetworks, Inc. All Rights Reserved.
-## Файловый менеджер (папка FileManager)
+## File manager (FileManager folder)
 Copyright (C) 2022, VadRov, all right reserved.
-## Модуль для работы с кнопоками (папка Keyboard)
+## Module for working with buttons (Keyboard folder)
 Copyright (C) 2021, VadRov, all right reserved.
-## Графическая библиотека для работы с объектами-примитивами в двумерном пространстве microGL2D (папка MicroGL2D)
+## Graphic library for working with primitive objects in two-dimensional space microGL2D (MicroGL2D folder)
 Copyright (C) 2022, VadRov, all right reserved.
-## Драйвер энкодера для STM32F4 (папка Encoder)
+## Encoder driver for STM32F4 (Encoder folder)
 Copyright (C) 2019, VadRov, all right reserved.
-## Процедуры работы со строками (папка MyString)
+## String procedures (MyString folder)
 Copyright (C) 2019, VadRov, all right reserved.
 
-Автор проекта: **VadRov**\
-Контакты: [Youtube](https://www.youtube.com/@VadRov) [Дзен](https://dzen.ru/vadrov) [VK](https://vk.com/vadrov) [Telegram](https://t.me/vadrov_channel)\
-Поддержать автора: [donate.yoomoney](https://yoomoney.ru/to/4100117522443917)
+Project author: **VadRov**\
+Contacts: [Youtube](https://www.youtube.com/@VadRov) [Dzen](https://dzen.ru/vadrov) [VK](https://vk.com/vadrov) [Telegram](https://t.me/vadrov_channel)\
+Donate: [donate.yoomoney](https://yoomoney.ru/to/4100117522443917)
